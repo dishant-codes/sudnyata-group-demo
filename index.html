@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudnyata Group</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper.js CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Google Fonts (Optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    /* Custom Cursor Circle */
+    #cursor {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #000000;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.5s ease-in-out, opacity 0.3s ease;
+      opacity: 0;
+      /* Initially hidden */
+      z-index: 1000;
+    }
+
+    /* Image Moving Effect */
+    .image-container img {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-white">
+  <!-- Header Section -->
+  <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">
+        <img src="./assets/images/logo.avif" class="w-[200px] md:w-[400px]" alt="" />
+      </h1>
+      <nav>
+        <!-- Hamburger Button (for mobile) -->
+        <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+          <!-- Icon: 3 lines -->
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Icon: X (hidden by default) -->
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
+          <li><a href="#" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="#" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
+        <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Services</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
+    <!-- Image Section -->
+    <div class="lg:w-2/3 overflow-hidden relative" data-aos="fade-right" id="profile">
+      <div id="cursor"></div>
+      <img src="./assets/images/profile-pic.svg" id="moving-image" alt="Owner"
+        class="rounded-lg w-full md:w-2/3 mx-auto">
+    </div>
+    <!-- Text Section -->
+    <div class="lg:w-2/3 mb-8 lg:mb-0" data-aos="fade-left">
+      <h1 class="text-4xl font-semibold text-gray-800 leading-tight mb-4">
+        Sudnyata Groups : The one-stop <br />
+        solution for organics
+      </h1>
+      <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+        Welcome to our group, where we specialize in manufacturing 100%
+        organic products crafted with the highest quality standards. Our
+        diverse range includes dried foods, millets, essential oils, activated
+        charcoal, and animal feed, all carefully sourced and processed to
+        retain their full nutrient value. We are committed to delivering
+        premium products that prioritize health, sustainability, and purity.
+        With no compromise on quality or nutrition, our offerings are designed
+        to meet the needs of customers seeking reliable, nutrient-rich
+        solutions.
+      </p>
+      <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+        Trust us for excellence in every product we create. With over 20+
+        years of experience we manufacture and export organic products.
+      </p>
+      <a href="#explore"
+        class="inline-block px-6 py-3 bg-gray-800 text-white font-medium text-lg rounded-full shadow hover:bg-gray-700 transition duration-300">
+        Explore Now
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Processed Vegetables and Fruits Section -->
+  <section class="pb-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section Title -->
+      <section class="text-center py-12 bg-green-100 mb-4">
+        <h1 class="text-4xl font-bold text-green-700 mb-4">
+          Processed Vegetables and Fruits
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Explore a range of nutritious and convenient vegetable and fruit
+          options.
+        </p>
+      </section>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Dehydrated Vegetables and Fruits Card -->
+        <div data-aos="fade-up" data-aos-delay="200"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+          <a href="./Dehydrated_Vegetables_Fruits_Page.html">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-orange-100 text-orange-600 flex items-center justify-center rounded-full text-3xl font-bold">
+                🥕
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+              Dehydrated Vegetables and Fruits
+            </h3>
+            <p class="text-gray-600 text-center">
+              Dehydrated vegetables and fruits retain nutrients while offering
+              longer shelf life, making them ideal for healthy snacking and
+              cooking.
+            </p>
+          </a>
+        </div>
+
+        <!-- Spread Dried Vegetables and Fruits Card -->
+        <div data-aos="fade-up" data-aos-delay="400"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+          <a href="./spread_dried_vegetables_and_fruits.html">
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
+                🍏
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+              Spread Dried Vegetables and Fruits
+            </h3>
+            <p class="text-gray-600 text-center">
+              Spread dried vegetables and fruits provide versatility for
+              snacking, recipes, and meal prep, ensuring healthy and flavorful
+              options.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Cards Section -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="text-center mb-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-gray-800">
+        We need importance of the products
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Switch to a healthier lifestyle with nature's best offerings.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Plant Based Card -->
+      <div data-aos="fade-up" data-aos-delay="800"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🥦
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Plant Based
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Rich in Protein Card -->
+      <div data-aos="fade-up" data-aos-delay="1000"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🫘
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Rich in Protein
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Energy Booster Card -->
+      <div data-aos="fade-up" data-aos-delay="1200"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-yellow-100 text-yellow-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            ⚡
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Energy Booster
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Cruelty Free Card -->
+      <div data-aos="fade-up" data-aos-delay="1400"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-pink-100 text-pink-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🐾
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Cruelty Free
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="max-w-7xl mx-auto px-6 py-12 md:flex md:justify-between md:items-center gap-12">
+    <!-- Left Section -->
+    <div class="w-full md:w-1/2 mb-10 md:mb-0">
+      <h2 class="text-4xl font-semibold text-gray-800 leading-tight mb-4">
+        Need More Information? Fill Out the Form and We’ll Get Back to You
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Complete the form below, and our team will respond promptly with the information you need.
+        We are here to assist you and ensure your satisfaction.
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+      <form action="#" method="POST">
+        <!-- Name and Email -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name<span
+                class="text-red-500">*</span></label>
+            <input type="text" id="name" placeholder="Enter Name"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email<span
+                class="text-red-500">*</span></label>
+            <input type="email" id="email" placeholder="Enter Email"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+        </div>
+
+        <!-- Code, Phone, Subject -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div>
+            <label for="code" class="block text-sm font-medium text-gray-700 mb-1">Code<span
+                class="text-red-500">*</span></label>
+            <input type="text" id="code" placeholder="Code"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone/WhatsApp<span
+                class="text-red-500">*</span></label>
+            <input type="tel" id="phone" placeholder="Mobile Number"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject<span
+                class="text-red-500">*</span></label>
+            <select id="subject"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+              <option value="" disabled selected>-Select-</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea id="message" placeholder="Enter Your Requirements" rows="4"
+            class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit"
+            class="w-full bg-gray-800 text-white font-semibold py-3 rounded-md hover:bg-gray-900 transition-all duration-300 flex items-center justify-center">
+            Submit Now <span class="ml-2 text-xl">&rarr;</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 Sudnyata Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true },
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Elements
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenIcon = document.getElementById("menu-open");
+    const menuCloseIcon = document.getElementById("menu-close");
+
+    // Toggle Function
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuOpenIcon.classList.toggle("hidden");
+      menuCloseIcon.classList.toggle("hidden");
+    });
+
+    // Custom Cursor
+    const cursor = document.getElementById("cursor");
+    const movingImage = document.getElementById("moving-image");
+    const container = document.getElementById("profile");
+    container.addEventListener("mousemove", (e) => {
+      cursor.style.opacity = 1; // Show circle
+      cursor.style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+    });
+
+    // Image Moving Effect
+
+    container.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e;
+
+      // Adjust Image Position
+      const xOffset = (window.innerWidth / 2 - clientX) / 30;
+      const yOffset = (window.innerHeight / 2 - clientY) / 30;
+
+      movingImage.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+    });
+
+
+
+    // Hide cursor when mouse leaves the image
+    container.addEventListener("mouseleave", () => {
+      cursor.style.opacity = 0; // Hide circle
+      movingImage.style.transform = "translate(0, 0)";
+    });
+  </script>
+</body>
+
+</html>
