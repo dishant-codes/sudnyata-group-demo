@@ -1,4 +1,4 @@
-# Contact Form Design with Tailwind CSS
+# Sudnyata Group Website Design with Tailwind CSS
 
 This project features a **modern website** built using **Tailwind CSS**. The form is responsive, visually appealing, and designed for easy integration into your web pages.
 
