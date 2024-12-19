@@ -73,9 +73,9 @@
         <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
           <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
           <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
-          <li><a href="#" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="products.html" class="hover:text-yellow-600">Product</a></li>
           <li><a href="#" class="hover:text-yellow-600">Contact</a></li>
-        </ul>
+      </ul>
       </nav>
     </div>
 
@@ -84,9 +84,9 @@
       <ul class="flex flex-col space-y-2">
         <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
         <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
-        <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Services</a></li>
+        <li><a href="products.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Product</a></li>
         <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
-      </ul>
+    </ul>
     </div>
     </div>
   </header>
@@ -95,9 +95,8 @@
   <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
     <!-- Image Section -->
     <div class="lg:w-2/3 overflow-hidden relative" data-aos="fade-right" id="profile">
-      <div id="cursor"></div>
-      <img src="./assets/images/profile-pic.svg" id="moving-image" alt="Owner"
-        class="rounded-lg w-full md:w-2/3 mx-auto">
+      <!-- <div id="cursor"></div> -->
+      <img src="./assets/images/home-img.jpeg" id="moving-image" alt="Owner" class="rounded-lg w-full md:w-2/3 mx-auto">
     </div>
     <!-- Text Section -->
     <div class="lg:w-2/3 mb-8 lg:mb-0" data-aos="fade-left">
@@ -162,13 +161,16 @@
               longer shelf life, making them ideal for healthy snacking and
               cooking.
             </p>
+            <a href="products.html"
+            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
+            View Products
+          </a>
           </a>
         </div>
 
         <!-- Spread Dried Vegetables and Fruits Card -->
         <div data-aos="fade-up" data-aos-delay="400"
           class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <a href="./spread_dried_vegetables_and_fruits.html">
             <div class="flex items-center justify-center mb-4">
               <div
                 class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
@@ -183,6 +185,9 @@
               snacking, recipes, and meal prep, ensuring healthy and flavorful
               options.
             </p>
+            <a href="products.html"
+            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
+            View Products
           </a>
         </div>
       </div>
@@ -279,8 +284,64 @@
     </div>
   </section>
 
+
+  <!-- Customer Reviews Section -->
+  <section class="bg-gray-100 py-16" id="reviews">
+    <div class="container mx-auto px-4">
+      <!-- Section Title -->
+      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800">
+        What Our Customers Say
+      </h2>
+
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Review 1 -->
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <img src="https://via.placeholder.com/100" alt="Customer 1" class="w-20 h-20 rounded-full mb-4">
+            <p class="text-gray-600 text-center mb-4">
+              "This is the best experience I've had! Highly recommended for quality and support."
+            </p>
+            <h4 class="font-semibold text-gray-800">- John Doe</h4>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <img src="https://via.placeholder.com/100" alt="Customer 2" class="w-20 h-20 rounded-full mb-4">
+            <p class="text-gray-600 text-center mb-4">
+              "Amazing service and top-notch products. Would definitely order again!"
+            </p>
+            <h4 class="font-semibold text-gray-800">- Jane Smith</h4>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <img src="https://via.placeholder.com/100" alt="Customer 3" class="w-20 h-20 rounded-full mb-4">
+            <p class="text-gray-600 text-center mb-4">
+              "Quick delivery and excellent communication. Highly satisfied!"
+            </p>
+            <h4 class="font-semibold text-gray-800">- Sam Wilson</h4>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <img src="https://via.placeholder.com/100" alt="Customer 4" class="w-20 h-20 rounded-full mb-4">
+            <p class="text-gray-600 text-center mb-4">
+              "Wonderful experience! The team was so supportive and the quality is unmatched."
+            </p>
+            <h4 class="font-semibold text-gray-800">- Lisa Adams</h4>
+          </div>
+        </div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Contact Section -->
-  <div class="max-w-7xl mx-auto px-6 py-12 md:flex md:justify-between md:items-center gap-12">
+  <div class="max-w-7xl mx-auto px-6 py-12 md:flex md:justify-between md:items-center gap-12" id="contact">
     <!-- Left Section -->
     <div class="w-full md:w-1/2 mb-10 md:mb-0">
       <h2 class="text-4xl font-semibold text-gray-800 leading-tight mb-4">
@@ -365,70 +426,68 @@
 
 
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-300 py-6 text-center">
-    <p>&copy; 2024 Sudnyata Group. All rights reserved.</p>
+  <!-- Footer Section -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-9">
+      <div class="flex flex-wrap justify-between">
+        <!-- Company Info -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif" class="w-[200px] md:w-[400px] rounded-lg p-2 bg-white" alt="" /></h2>
+          <p class="text-gray-300 leading-relaxed">
+            Sudnyata Group of Companies, Vikramshila Nagar, <br>
+            Behind Shankar Ice Factory, 
+            Wardha (MH), India- 442001
+          </p>
+          <div class="mt-4">
+            <p class="text-gray-300 flex items-center">
+              📞 <span class="ml-2 font-semibold text-white">+91 931-608-1913</span>
+            </p>
+            <p class="text-gray-300 flex items-center mt-2">
+              ✉️ <span class="ml-2 font-semibold text-white">export@sudnyata.in</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About Us</a></li>
+            <li><a href="about.html" class="hover:text-white">Why Us</a></li>
+            <li><a href="index.html#reviews" class="hover:text-white">Our Customers</a></li>
+            <li><a href="index.html#contact" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Products -->
+        <div class="w-full md:w-1/3">
+          <h3 class="text-xl font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="products.html" class="hover:text-white">Dehydrated Vegetables and
+                Fruits</a></li>
+            <li><a href="products.html" class="hover:text-white">Spray Dried Vegetables and
+                Fruits</a></li>
+            <li><a href="products.html" class="hover:text-white">Essential Oil</a></li>
+            <li><a href="products.html" class="hover:text-white">Millets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-t flex justify-between border-gray-700 mt-8 pt-4 text-center">
+        <p class="text-gray-400 text-sm">
+          Copyright 2024 Sudnyata Groups all rights reserved.
+        </p>
+        <p class="text-gray-500 text-sm">
+          Powered By <a href="#" class="text-white font-semibold">SupremoTech</a>
+        </p>
+      </div>
+    </div>
   </footer>
 
   <!-- Scripts -->
-  <script>
-    // Initialize Swiper
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true },
-    });
-
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-
-    // Elements
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuOpenIcon = document.getElementById("menu-open");
-    const menuCloseIcon = document.getElementById("menu-close");
-
-    // Toggle Function
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      menuOpenIcon.classList.toggle("hidden");
-      menuCloseIcon.classList.toggle("hidden");
-    });
-
-    // Custom Cursor
-    const cursor = document.getElementById("cursor");
-    const movingImage = document.getElementById("moving-image");
-    const container = document.getElementById("profile");
-    container.addEventListener("mousemove", (e) => {
-      cursor.style.opacity = 1; // Show circle
-      cursor.style.left = e.pageX + "px";
-      cursor.style.top = e.pageY + "px";
-    });
-
-    // Image Moving Effect
-
-    container.addEventListener("mousemove", (e) => {
-      const { clientX, clientY } = e;
-
-      // Adjust Image Position
-      const xOffset = (window.innerWidth / 2 - clientX) / 30;
-      const yOffset = (window.innerHeight / 2 - clientY) / 30;
-
-      movingImage.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-    });
-
-
-
-    // Hide cursor when mouse leaves the image
-    container.addEventListener("mouseleave", () => {
-      cursor.style.opacity = 0; // Hide circle
-      movingImage.style.transform = "translate(0, 0)";
-    });
-  </script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
