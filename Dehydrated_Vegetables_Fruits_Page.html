@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dehydrated Vegetables & Fruits</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animate on Scroll Library) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Custom Card Shadow */
+    .custom-shadow {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+
+  <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">
+        <img src="./assets/images/logo.avif" class="w-[200px] md:w-[400px]" alt="" />
+      </h1>
+      <nav>
+        <!-- Hamburger Button (for mobile) -->
+        <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+          <!-- Icon: 3 lines -->
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Icon: X (hidden by default) -->
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
+          <li><a href="#" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="#" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
+        <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Services</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+
+  <header class="bg-green-600 py-6 text-white text-center">
+    <h1 class="text-4xl font-bold">Dehydrated Vegetables & Fruits</h1>
+    <p class="mt-2 text-lg">Explore our variety of high-quality dehydrated products</p>
+  </header>
+
+  <!-- Card Grid Section -->
+  <section class="container mx-auto px-6 py-10">
+
+    <h2 class="text-3xl font-bold text-center text-green-600 mb-6" data-aos="fade-up">Vegetables</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Card Template -->
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Garlic Flakes</h2>
+        <p class="text-gray-600">Freshly dehydrated garlic, perfect for cooking.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="200">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Ginger Flakes</h2>
+        <p class="text-gray-600">Premium ginger flakes for flavor enhancement.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="300">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Green Chilli Flakes</h2>
+        <p class="text-gray-600">Spicy green chili flakes for your dishes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="400">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Red Onion Flakes</h2>
+        <p class="text-gray-600">Sweet and crispy dehydrated red onions.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="500">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">White Onion Flakes</h2>
+        <p class="text-gray-600">Crisp and flavorful white onion flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="600">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Tomato Flakes</h2>
+        <p class="text-gray-600">Sun-dried tomatoes for intense flavor.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="700">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Beetroot Flakes</h2>
+        <p class="text-gray-600">Nutrient-rich beetroot flakes for your recipes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="800">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Potato Flakes</h2>
+        <p class="text-gray-600">Convenient and high-quality potato flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="900">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Pumpkin Flakes</h2>
+        <p class="text-gray-600">Sweet and healthy pumpkin flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1000">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Spinach Flakes</h2>
+        <p class="text-gray-600">Rich in vitamins and flavor-packed spinach flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1100">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Cabbage Flakes</h2>
+        <p class="text-gray-600">Freshly dehydrated cabbage for cooking.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1200">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Mint Flakes</h2>
+        <p class="text-gray-600">Refreshing and aromatic mint flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1300">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Carrot Flakes</h2>
+        <p class="text-gray-600">Crunchy and nutritious carrot flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1400">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Tamarind Flakes</h2>
+        <p class="text-gray-600">Tangy and flavorful tamarind flakes.</p>
+      </div>
+
+      <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+           data-aos="fade-up" data-aos-delay="1500">
+        <h2 class="text-lg font-semibold text-green-600 mb-2">Lemon Flakes</h2>
+        <p class="text-gray-600">Zesty and aromatic lemon flakes.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fruits Section -->
+<section class="container mx-auto px-6 py-10">
+  <!-- Section Title -->
+  <h2 class="text-3xl font-bold text-center text-green-600 mb-6" data-aos="fade-up">Fruits</h2>
+
+  <!-- Card Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Apple Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Apple Flakes</h3>
+      <p class="text-gray-600">Sweet and crispy dehydrated apple flakes.</p>
+    </div>
+
+    <!-- Banana Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Banana Flakes</h3>
+      <p class="text-gray-600">Rich in potassium and perfect for snacking.</p>
+    </div>
+
+    <!-- Guava Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Guava Flakes</h3>
+      <p class="text-gray-600">Tropical guava flakes for a burst of flavor.</p>
+    </div>
+
+    <!-- Mango Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Mango Flakes</h3>
+      <p class="text-gray-600">Delicious sun-dried mango flakes for your dishes.</p>
+    </div>
+
+    <!-- Orange Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Orange Flakes</h3>
+      <p class="text-gray-600">Zesty and tangy dehydrated orange flakes.</p>
+    </div>
+
+    <!-- Papaya Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="600">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Papaya Flakes</h3>
+      <p class="text-gray-600">Nutrient-rich and sweet papaya flakes.</p>
+    </div>
+
+    <!-- Pineapple Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="700">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Pineapple Flakes</h3>
+      <p class="text-gray-600">Tropical and tangy dehydrated pineapple flakes.</p>
+    </div>
+
+    <!-- Strawberry Flakes Card -->
+    <div class="card bg-white p-4 rounded-lg custom-shadow hover:scale-105 transition transform duration-300"
+         data-aos="fade-up" data-aos-delay="800">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Strawberry Flakes</h3>
+      <p class="text-gray-600">Sweet and fruity dehydrated strawberry flakes.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- AOS (Animate on Scroll Library) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Elements
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenIcon = document.getElementById("menu-open");
+    const menuCloseIcon = document.getElementById("menu-close");
+
+    // Toggle Function
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuOpenIcon.classList.toggle("hidden");
+      menuCloseIcon.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
