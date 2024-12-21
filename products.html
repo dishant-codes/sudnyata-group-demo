@@ -196,6 +196,92 @@
         const categories = {
             "dehydrated": [
                 {
+                    name: "Red Onion Flakes",
+                    description: `
+                            <ul>
+                                <li><strong>Appearance:</strong> Light red to purple in color.</li>
+                                <li><strong>Forms Available:</strong> Flakes, powder, granules.</li>
+                                <li><strong>Processing Method:</strong> Hot air drying.</li>
+                                <li><strong>Flavor Profile:</strong> Strong, pungent red onion flavor, slightly sweeter than white onion.</li>
+                                <li><strong>Applications:</strong> Used in soups, sauces, seasoning blends, and ready-to-eat meals. Ideal for retaining red onion flavor in dry form.</li>
+                                <li><strong>Nutritional Value:</strong> Rich in fiber, vitamins C and B6, and antioxidants like quercetin.</li>
+                            </ul>
+    `,
+                    img: "./assets/images/products/Flakes/Red Onion.jpeg"
+                },
+                {
+                    name: "White Onion Flakes",
+                    description: `
+                            <ul>
+                                <li><strong>Appearance:</strong> White to off-white color.</li>
+                                <li><strong>Forms Available:</strong> Flakes, powder, granules, minced.</li>
+                                <li><strong>Processing Method:</strong> Air-dried.</li>
+                                <li><strong>Flavor Profile:</strong> Strong, pungent onion flavor, slightly milder than red onions.</li>
+                                <li><strong>Applications:</strong> Used in soups, sauces, spice blends, processed foods, and convenience meals.</li>
+                                <li><strong>Nutritional Value:</strong> Rich in fiber, vitamin C, and low in calories.</li>
+                            </ul>
+    `,
+                    img: "./assets/images/products/Flakes/White Onion.webp"
+                },
+                {
+                    name: "Tomato Flakes",
+                    description: `
+                            <ul>
+                                <li><strong>Appearance:</strong> Red to dark red.</li>
+                                <li><strong>Forms Available:</strong> Flakes, powder, granules, sliced.</li>
+                                <li><strong>Processing Method:</strong> Solar Drying or hot air drying.</li>
+                                <li><strong>Flavor Profile:</strong> Intense tomato flavor, concentrated sweetness.</li>
+                                <li><strong>Applications:</strong> Used in soups, sauces, seasoning mixes, snacks, and ready-made meals.</li>
+                                <li><strong>Nutritional Value:</strong> High in vitamins A and C, potassium, and antioxidants like lycopene.</li>
+                            </ul>
+    `,
+                    img: "./assets/images/products/Flakes/Tomato.jpeg"
+                },
+                {
+                    name: "Beetroot Flakes",
+                    description: `
+                            <ul>
+                                <li><strong>Appearance:</strong> Deep red to purplish color.</li>
+                                <li><strong>Forms Available:</strong> Flakes, powder, granules, diced.</li>
+                                <li><strong>Processing Method:</strong> Air-dried, vacuum-dried.</li>
+                                <li><strong>Flavor Profile:</strong> Earthy and slightly sweet.</li>
+                                <li><strong>Applications:</strong> Used in soups, beverages, natural colorants, health drinks, and snacks.</li>
+                                <li><strong>Nutritional Value:</strong> Rich in folate, iron, potassium, and antioxidants like betalains.</li>
+                            </ul>
+    `,
+                    img: "./assets/images/products/Flakes/Beetroot.webp"
+                },
+                {
+                    name: "Garlic Flakes",
+                    description: `
+                            <ul>
+                                <li><strong>Appearance:</strong> White to light yellow.</li>
+                                <li><strong>Forms Available:</strong> Flakes, powder, granules, minced.</li>
+                                <li><strong>Processing Method:</strong> Hot air drying.</li>
+                                <li><strong>Flavor Profile:</strong> Strong, pungent garlic flavor.</li>
+                                <li><strong>Applications:</strong> Used in spice blends, sauces, marinades, processed foods, and ready-to-eat meals.</li>
+                                <li><strong>Nutritional Value:</strong> High in allicin, vitamins C and B6, and manganese.</li>
+                            </ul>
+    `,
+                    img: "./assets/images/products/Flakes/Garlic.jpeg"
+                },
+                {
+                    name: "Cabbage Flakes",
+                    description: `
+                        <ul>
+                        <li><strong>Appearance:</strong> Light green to yellow-green.</li>
+                        <li><strong>Forms Available:</strong> Flakes, powder, shredded.</li>
+                        <li><strong>Processing Method:</strong> Hot air drying.</li>
+                        <li><strong>Flavor Profile:</strong> Mild, slightly sweet, typical cabbage flavor.</li>
+                        <li><strong>Applications:</strong> Used in soups, stews, stir-fries, and salad mixes.</li>
+                        <li><strong>Nutritional Value:</strong> Rich in vitamin C, fiber, and low in calories.</li>
+                        </ul>
+                    `,
+                    img: "./assets/images/products/Flakes/Cabbage.webp"
+                }
+            ],
+            "spray-dried": [
+                {
                     name: "Red Onion Powder",
                     description: `
                             <ul>
@@ -265,24 +351,6 @@
     `,
                     img: "./assets/images/products/Powder/Garlic.jpeg"
                 },
-                {
-                    name: "Cabbage Flakes",
-                    description: `
-                        <ul>
-                        <li><strong>Appearance:</strong> Light green to yellow-green.</li>
-                        <li><strong>Forms Available:</strong> Flakes, powder, shredded.</li>
-                        <li><strong>Processing Method:</strong> Hot air drying.</li>
-                        <li><strong>Flavor Profile:</strong> Mild, slightly sweet, typical cabbage flavor.</li>
-                        <li><strong>Applications:</strong> Used in soups, stews, stir-fries, and salad mixes.</li>
-                        <li><strong>Nutritional Value:</strong> Rich in vitamin C, fiber, and low in calories.</li>
-                        </ul>
-                    `,
-                    img: "./assets/images/products/Flakes/Cabbage.jpg"
-                }
-            ],
-            "spray-dried": [
-                { name: "Garlic Powder", description: "Fine and pure garlic powder.", img: "https://via.placeholder.com/300x200" },
-                { name: "Ginger Powder", description: "High-quality ginger powder for all uses.", img: "https://via.placeholder.com/300x200" }
             ],
             "essential-oil": [
                 { name: "Lemon Oil", description: "Fresh and natural lemon oil.", img: "https://via.placeholder.com/300x200" },
@@ -357,7 +425,7 @@
                 const isImageLeft = index % 2 === 0; // Alternate image position
                 const card = `
           <div class="card flex flex-col md:flex-row items-center ${isImageLeft ? '' : 'md:flex-row-reverse'} bg-white border border-green-300 p-4 rounded-lg shadow-md hover:shadow-lg transition-transform">
-            <img src="${item.img}" alt="${item.name}" class="w-full md:w-1/3 rounded-lg object-cover">
+            <img src="${item.img}" alt="${item.name}" class="w-full md:w-1/3 w-[300px] h-[300px] rounded-lg object-cover">
             <div class="flex-1 mt-4 md:mt-0 md:ml-6">
               <h3 class="text-xl font-bold">${item.name}</h3>
               <p class="mt-2 text-green-700">${item.description}</p>
