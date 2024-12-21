@@ -1,14 +1,10 @@
- // Swiper for Image Slider (Screenshot Slider)
- var swiper1 = new Swiper('.image-slider', {
+// Swiper for Image Slider (Screenshot Slider)
+var swiper1 = new Swiper('.image-slider', {
   loop: true,  // Loop the slider
   slidesPerView: 1,  // Show one slide at a time
   spaceBetween: 10,  // Space between slides
   autoplay: {
     delay: 3000,  // Slide changes every 3 seconds
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,  // Enable clickable pagination dots
   },
   navigation: {
     nextEl: '.swiper-button-next',  // Next button
@@ -19,14 +15,20 @@
 // Swiper for Text Review Slider
 var swiper2 = new Swiper('.text-slider', {
   loop: true,  // Loop the slider
-  slidesPerView: 2,  // Show one slide at a time
+  slidesPerView: 1,  // Show one slide at a time
   spaceBetween: 10,  // Space between slides
+  // Responsive breakpoints
+  breakpoints: {
+    // When window width is >= 768px (tablet and above)
+    768: {
+      slidesPerView: 2, // Show 2 slides on desktop
+      spaceBetween: 20, // Increase space between slides
+    }
+  },
   autoplay: {
     delay: 4000,  // Slide changes every 4 seconds
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,  // Enable clickable pagination dots
+    disableOnInteraction: false, // Don't disable autoplay after user interaction
+    pauseOnMouseEnter: true, // Pause autoplay on hover
   },
   navigation: {
     nextEl: '.swiper-button-next',  // Next button
