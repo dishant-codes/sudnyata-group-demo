@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page | Sudnyata Group</title>
+    <title>5 Tips to Grow Your Dealership Business | Sudnyata Group</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,43 +21,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        /* Custom CSS for sticky behavior */
+        .sticky-container {
+            position: sticky;
+            top: 20px;
+            /* Adjust as needed */
+            height: fit-content;
+            /* Important for proper height calculation */
         }
 
-        /* Styling for Category Tabs */
-        .category-tab {
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border: 2px solid transparent;
-            border-radius: 9999px;
-            background-color: #E3F9E5;
-            /* Light green background */
-            color: #047857;
-            /* Dark green text */
-            transition: all 0.3s ease;
+        .product-content {
+            height: 100vh;
+            /* Set a height for the scrollable content */
+            overflow-y: auto;
+            scrollbar-width: thin;
+            /* For Firefox */
+            scrollbar-color: #888 #eee;
+            /* For Firefox */
         }
 
-        .category-tab:hover {
-            background-color: #047857;
-            /* Dark green hover background */
-            color: #ffffff;
-            /* White text */
+        .product-content::-webkit-scrollbar {
+            width: 6px;
+            /* Width of the scrollbar */
         }
 
-        .category-tab.active-tab {
-            border-color: #047857;
-            /* Green border for active state */
-            background-color: #047857;
-            color: #ffffff;
+        .product-content::-webkit-scrollbar-track {
+            background: #eee;
+            /* Color of the tracking area */
+        }
+
+        .product-content::-webkit-scrollbar-thumb {
+            background-color: #888;
+            /* Color of the scroll thumb */
+            border-radius: 3px;
+            /* Roundness of the scroll thumb */
         }
     </style>
 </head>
 
-<body class="bg-white text-green-900">
-    
+<body class="font-sans bg-white text-gray-800">
+
     <!-- Header Section -->
     <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
@@ -108,40 +111,101 @@
         </div>
     </header>
 
+    <!-- Header Section -->
+    <header class="py-12 text-center border-b border-gray-200">
+        <h1 class="text-4xl font-bold" data-aos="fade-down">5 Tips to Grow Your Dealership Business</h1>
+        <p class="text-gray-500 mt-2" data-aos="fade-up">Published on December 25, 2024 | By Admin</p>
+    </header>
 
-    <!-- Choose Category Section -->
-    <section class="bg-white py-8">
-        <div class="container mx-auto px-6 lg:px-20">
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="dehydrated">Dehydrated Vegetables and Fruits</button>
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="spray-dried">Spray Dried Vegetables and Fruits</button>
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="processed-dairy">Processed Dairy</button>
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="essential-oil">Essential Oil</button>
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="millets">Millets</button>
-                <button
-                    class="category-tab px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:ring-4 ring-green-400"
-                    data-category="animal-feed">Animal Feed</button>
+    <!-- Blog Content Section -->
+    <main class="max-w-4xl mx-auto px-4 lg:px-0 py-12">
+        <!-- Blog Image -->
+        <div class="mb-8">
+            <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="rounded-lg shadow-lg"
+                data-aos="fade-up">
+        </div>
+
+        <!-- Blog Content -->
+        <div class="space-y-6 text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            <p>
+                Growing your dealership business requires a blend of strategic planning, effective marketing, and
+                a deep understanding of customer needs. In this blog, we’ll cover five practical tips to help
+                you achieve sustainable growth and stand out in a competitive market.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800">1. Leverage Digital Marketing</h2>
+            <p>
+                Digital marketing is a powerful tool for reaching new customers and strengthening your brand
+                visibility. Utilize social media platforms, email marketing, and targeted advertising campaigns
+                to engage with your audience effectively.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800">2. Offer Exceptional Customer Service</h2>
+            <p>
+                Happy customers are your best advocates. Focus on delivering outstanding customer service,
+                addressing concerns promptly, and building trust to foster long-term relationships.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800">3. Build a Strong Brand Identity</h2>
+            <p>
+                Branding plays a critical role in setting your dealership apart. Invest in creating a consistent
+                and professional brand image across all platforms and materials.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800">4. Streamline Your Operations</h2>
+            <p>
+                Efficiency in operations is essential for profitability. Evaluate your processes and look for
+                ways to reduce costs and improve productivity.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800">5. Focus on Training and Development</h2>
+            <p>
+                Invest in training your staff to enhance their skills and keep them motivated. A well-trained team
+                can significantly impact your business's growth and customer satisfaction.
+            </p>
+
+            <p>
+                By following these tips, you’ll be better equipped to grow your dealership and achieve long-term
+                success. Stay tuned for more insights and strategies in our upcoming blogs!
+            </p>
+        </div>
+    </main>
+
+    <!-- Related Blogs Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-8" data-aos="fade-up">Related Blogs</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 hover:shadow-xl transition"
+                    data-aos="fade-up">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog Image" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="#" class="hover:text-blue-500 transition">The Importance of Branding</a>
+                    </h3>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 hover:shadow-xl transition"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog Image" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="#" class="hover:text-blue-500 transition">How to Use Digital Marketing</a>
+                    </h3>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 hover:shadow-xl transition"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/300x200" alt="Blog Image" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="#" class="hover:text-blue-500 transition">Strategies for Customer Retention</a>
+                    </h3>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Cards Section -->
-    <section class="container mx-auto my-8 px-4">
-        <div id="cardsContainer" class="flex flex-col gap-8">
-            <!-- Cards will be dynamically loaded here -->
-        </div>
-    </section>
-
 
     <div class="fixed bottom-4 left-4">
         <a href="https://wa.me/+917028399228?text=Hi" target="_blank"
@@ -149,7 +213,6 @@
             <img src="./assets/WhatsApp.svg" class="w-8 h-8 text-white" fill="currentColor" alt="">
         </a>
     </div>
-
 
   <!-- Footer Section -->
   <footer class="bg-black text-white py-8">
@@ -226,93 +289,6 @@
 
     <!-- Scripts -->
     <script src="./assets/js/script.js"></script>
-    <!-- JavaScript for Dynamic Cards -->
-    <script type="module">
-        import categories from "./data.mjs";
-
-        // Get all cards
-        const cardsContainer = document.getElementById("cardsContainer");
-        const buttons = document.querySelectorAll(".category-tab");
-
-        // Define image URL prefixes for each category type
-        const imagePrefixMapping = {
-            "dehydrated": "./assets/images/products/Flakes/",
-            "spray-dried": "./assets/images/products/Powder/",
-            "processed-dairy": "./assets/images/products/Powder/",
-            "millets": "./assets/images/products/Millets/",
-            "essential-oil": "./assets/images/products/Essential Oil/",
-            "animal-feed": "./assets/images/products/Animal Feed/",
-        };
-
-        function loadCards(category, prefix) {
-            cardsContainer.innerHTML = ""; // Clear previous cards
-            const selectedCategory = categories[category];
-
-            console.log(category);
-
-
-            selectedCategory.forEach((item, index) => {
-                const isImageLeft = index % 2 === 0; // Alternate image position
-
-                // Create the card element with AOS attributes
-                const card = document.createElement("div");
-                card.className = `card flex flex-col md:flex-row items-center ${isImageLeft ? "" : "md:flex-row-reverse"
-                    } bg-white border border-green-300 p-4 rounded-lg shadow-md hover:shadow-lg transition-transform`;
-                card.setAttribute("data-aos", "fade-up"); // Animation type
-                card.setAttribute("data-aos-delay", index * 100); // Stagger animation by index
-
-                card.innerHTML = `
-            <img src="${prefix}${item.img}" alt="${item.name}" class="w-full md:w-1/3 w-[300px] h-[300px] rounded-lg object-cover">
-            <div class="flex-1 mt-4 md:mt-0 md:ml-6">
-                <h3 class="text-xl font-bold">${item.name}</h3>
-                <p class="mt-2 text-green-700">${item.description}</p>
-            </div>
-        `;
-
-                cardsContainer.appendChild(card);
-            });
-
-            // Reinitialize AOS after dynamically adding elements
-            AOS.refresh();
-        }
-
-        // Function to set the active tab
-        function setActiveTab(category) {
-            buttons.forEach((btn) => {
-                const btnCategory = btn.getAttribute("data-category");
-                btn.classList.toggle("active-tab", btnCategory === category);
-                btn.classList.toggle("bg-green-800", btnCategory === category);
-            });
-        }
-
-        // Function to handle category activation
-        function activateCategory(category) {
-            const prefix = imagePrefixMapping[category]; // Default prefix
-            loadCards(category, prefix);
-            setActiveTab(category);
-        }
-
-        // Event listener for buttons
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const category = button.getAttribute("data-category");
-                window.location.hash = category; // Update the hash
-                activateCategory(category);
-
-            });
-        });
-
-        // Event listener for hash changes
-        window.addEventListener("hashchange", () => {
-            const hashCategory = window.location.hash.substring(1); // Remove the `#`
-            activateCategory(hashCategory);
-        });
-
-        // Initial setup on page load
-        const initialCategory = window.location.hash.substring(1) || "dehydrated";
-        activateCategory(initialCategory);
-
-    </script>
 </body>
 
 </html>
