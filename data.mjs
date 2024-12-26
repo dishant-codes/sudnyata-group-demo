@@ -833,7 +833,106 @@ const categories = {
             },
     ],
     "essential-oil": [
-        { name: "Essential Oil", description: "Comming Soon...", img: "https://via.placeholder.com/300x200" },
+        { name: "", description: `
+             <section class="max-w-4xl mx-auto mt-10 px-4 text-center">
+                <h2 class="text-2xl font-bold mb-6">Essential Oils</h2>
+                <p class="text-gray-600 mb-6">
+                    Essential oils are highly concentrated plant extracts known for their therapeutic, aromatic, and healing properties. Derived from flowers, leaves, seeds, and roots, they offer a natural way to enhance well-being.
+                </p>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-left" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4 text-center">Applications</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Aromatherapy:</strong> Promote relaxation, reduce stress, and improve mood by diffusing essential oils like lavender or peppermint.</li>
+                    <li><strong>Skincare:</strong> Nourish and rejuvenate skin with oils like tea tree for acne or rosehip for hydration.</li>
+                    <li><strong>Haircare:</strong> Strengthen and condition hair using oils like rosemary or argan.</li>
+                    <li><strong>Massage:</strong> Combine with carrier oils for soothing and therapeutic massages.</li>
+                    <li><strong>Home Care:</strong> Create natural cleaning solutions or freshen spaces with citrus or eucalyptus oils.</li>
+                    </ul>
+                </div>
+                </section>
+
+
+                <section class="max-w-7xl mx-auto mt-10 px-4">
+                <h2 class="text-2xl font-bold text-center mb-6">Essential Oils</h2>
+                <p class="text-gray-600 text-center mb-8">Where there is Fragrance... there is Happiness</p>
+                <div class="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <ul class="list-disc space-y-2">
+                    <li>CitSpray</li>
+                    <li>Agarwood</li>
+                    <li>Bergamot</li>
+                    <li>Carrot Seed</li>
+                    <li>Lychee</li>
+                    <li>Mango</li>
+                    <li>Ajwain</li>
+                    <li>Bettle Leaf</li>
+                    <li>Cashew Nut</li>
+                    <li>Liconse</li>
+                    <li>Musk Melon</li>
+                    <li>Algae</li>
+                    <li>Bhringraj</li>
+                    <li>Ces</li>
+                    <li>Lily</li>
+                    <li>Myrrh</li>
+                    </ul>
+                    <ul class="list-disc space-y-2">
+                    <li>Aloe Vera</li>
+                    <li>Amber</li>
+                    <li>Ambrette Seed</li>
+                    <li>Black Cumant</li>
+                    <li>Black Pepper</li>
+                    <li>Catrip</li>
+                    <li>Ume</li>
+                    <li>Myrtle</li>
+                    <li>Black Seed</li>
+                    <li>Cedarwood</li>
+                    <li>Celery Seed</li>
+                    <li>Lotus</li>
+                    <li>Naag Champa</li>
+                    <li>Magnolia</li>
+                    <li>Nagarmotha</li>
+                    <li>Amla</li>
+                    </ul>
+                    <ul class="list-disc space-y-2">
+                    <li>Blend Oils</li>
+                    <li>Chamel</li>
+                    <li>Mahogany</li>
+                    <li>Nara</li>
+                    <li>Aniue</li>
+                    <li>Cove Icaf</li>
+                    <li>Bluebeny</li>
+                    <li>Chamomile</li>
+                    <li>And</li>
+                    <li>Coriander</li>
+                    <li>Firangi Paani</li>
+                    <li>Frankincense</li>
+                    <li>Hyaonth</li>
+                    <li>Mahua</li>
+                    <li>Noom</li>
+                    <li>Jackfruit Oil</li>
+                    </ul>
+                    <ul class="list-disc space-y-2">
+                    <li>Borage</li>
+                    <li>Bive</li>
+                    <li>Malkangans</li>
+                    <li>Neroll</li>
+                    <li>Cranberry</li>
+                    <li>Gandoura</li>
+                    <li>Jama Rosa</li>
+                    <li>Ashwagandha</li>
+                    <li>Bovewellia</li>
+                    <li>Chamomile</li>
+                    <li>Mandarin</li>
+                    <li>Nettle</li>
+                    <li>Pepays Seed</li>
+                    <li>Red Chilll</li>
+                    <li>Tagetes</li>
+                    <li>Cucumber</li>
+                    </ul>
+                </div>
+                </section>
+
+
+            `, img: "essential-oils.jpg" },
     ],
     "processed-dairy": [
         {
@@ -920,6 +1019,92 @@ const categories = {
 
     "animal-feed": [
         { name: "Animal Feed", description: "<h2>Comming Soon...", img: "https://via.placeholder.com/300x200" },
+    ],
+    "spices": [
+        {
+            name: "Turmeric",
+            img: "Turmeric.jpg",
+            description: `
+              <p><strong>Appearance:</strong> Bright yellow to golden-orange in color.</p>
+              <p><strong>Forms Available:</strong> Powder, whole dried roots, capsules.</p>
+              <p><strong>Processing Method:</strong> Sun drying or mechanical drying after boiling and peeling.</p>
+              <p><strong>Flavor Profile:</strong> Earthy, warm, and slightly bitter with a peppery aroma.</p>
+              <p><strong>Applications:</strong> Used in curries, soups, beverages, marinades, and medicinal preparations. Known for its color-enhancing properties in food.</p>
+              <p><strong>Nutritional Value:</strong> Rich in curcumin, antioxidants, and anti-inflammatory compounds. Contains vitamins C and E, and iron.</p>
+            `
+          },
+          {
+            name: "Cumin Seeds",
+            img: "Cumin Seeds.webp",
+            description: `
+              <p><strong>Appearance:</strong> Small, elongated, ridged seeds with a pale brown color.</p>
+              <p><strong>Forms Available:</strong> Whole seeds, ground powder, oil.</p>
+              <p><strong>Processing Method:</strong> Sun drying and mechanical cleaning.</p>
+              <p><strong>Flavor Profile:</strong> Warm, earthy, and slightly spicy with nutty undertones.</p>
+              <p><strong>Applications:</strong> Used in spice blends, soups, curries, bread, and rice dishes. Essential in Middle Eastern and Indian cuisines.</p>
+              <p><strong>Nutritional Value:</strong> High in iron, dietary fiber, and antioxidants. Contains essential oils that aid digestion.</p>
+            `
+          },
+          {
+            name: "Black Pepper",
+            img: "Black Pepper.webp",
+            description: `
+              <p><strong>Appearance:</strong> Small, round, black to dark brown wrinkled berries.</p>
+              <p><strong>Forms Available:</strong> Whole peppercorns, ground powder, oil.</p>
+              <p><strong>Processing Method:</strong> Sun drying after harvesting the unripe berries.</p>
+              <p><strong>Flavor Profile:</strong> Sharp, spicy, and pungent with woody notes.</p>
+              <p><strong>Applications:</strong> Used in soups, sauces, marinades, and as a seasoning for savory dishes. Enhances the flavor of any cuisine.</p>
+              <p><strong>Nutritional Value:</strong> Rich in piperine, antioxidants, and minerals like manganese and iron. Boosts metabolism and digestion.</p>
+            `
+          },
+          {
+            name: "Red Chili Powder",
+            img: "Red Chili Powder.webp",
+            description: `
+              <p><strong>Appearance:</strong> Fine powder with a vibrant red color.</p>
+              <p><strong>Forms Available:</strong> Powder, flakes, whole dried chilies.</p>
+              <p><strong>Processing Method:</strong> Sun drying and grinding of red chilies.</p>
+              <p><strong>Flavor Profile:</strong> Spicy, hot, and slightly smoky depending on the chili variety.</p>
+              <p><strong>Applications:</strong> Used in curries, soups, sauces, marinades, and dry rubs. Adds heat and vibrant color to dishes.</p>
+              <p><strong>Nutritional Value:</strong> High in capsaicin, vitamin C, and antioxidants. Promotes metabolism and supports immunity.</p>
+            `
+          },
+          {
+            name: "Dried Bay Leaves",
+            img: "Dried Bay Leaves.jpeg",
+            description: `
+              <p><strong>Appearance:</strong> Flat, oval-shaped leaves with a light green to olive-brown color.</p>
+              <p><strong>Forms Available:</strong> Whole dried leaves, ground powder.</p>
+              <p><strong>Processing Method:</strong> Sun drying or air drying.</p>
+              <p><strong>Flavor Profile:</strong> Subtle, herbal, and slightly floral with hints of eucalyptus.</p>
+              <p><strong>Applications:</strong> Used in soups, stews, sauces, rice dishes, and marinades. Adds depth and aroma to slow-cooked dishes.</p>
+              <p><strong>Nutritional Value:</strong> Contains vitamins A and C, calcium, and antioxidants. Known for its digestive and anti-inflammatory properties.</p>
+            `
+          },
+          {
+            name: "Cinnamon",
+            img: "Cinnamon.jpg",
+            description: `
+              <p><strong>Appearance:</strong> Brown, thin, rolled bark sticks or ground powder.</p>
+              <p><strong>Forms Available:</strong> Sticks, powder, oil.</p>
+              <p><strong>Processing Method:</strong> Harvesting, peeling, and sun drying the bark of cinnamon trees.</p>
+              <p><strong>Flavor Profile:</strong> Sweet, warm, and woody with a hint of spice.</p>
+              <p><strong>Applications:</strong> Used in desserts, beverages, curries, and spice blends. Adds a sweet aroma to baked goods and drinks.</p>
+              <p><strong>Nutritional Value:</strong> Rich in cinnamaldehyde, antioxidants, and anti-inflammatory compounds. Supports blood sugar regulation.</p>
+            `
+          },
+          {
+            name: "Nutmeg",
+            img: "Nutmeg.webp",
+            description: `
+              <p><strong>Appearance:</strong> Small, oval-shaped seeds with a brown, veined surface.</p>
+              <p><strong>Forms Available:</strong> Whole seeds, ground powder.</p>
+              <p><strong>Processing Method:</strong> Sun drying and grinding.</p>
+              <p><strong>Flavor Profile:</strong> Sweet, nutty, and slightly spicy with a warm aroma.</p>
+              <p><strong>Applications:</strong> Used in desserts, beverages, soups, sauces, and spice blends. Enhances the flavor of sweet and savory dishes.</p>
+              <p><strong>Nutritional Value:</strong> Contains essential oils, antioxidants, and vitamins A and C. Known for its calming and digestive properties.</p>
+            `
+          }
     ],
     "millets": [
         {
