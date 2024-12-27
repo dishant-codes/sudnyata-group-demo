@@ -1018,7 +1018,105 @@ const categories = {
     ],
 
     "animal-feed": [
-        { name: "Animal Feed", description: "<h2>Comming Soon...", img: "https://via.placeholder.com/300x200" },
+        {
+            name: "Soybean Oil Cake",
+            description: `
+              <p><strong>Appearance:</strong> Light brown to golden brown, coarse texture.</p>
+              <p><strong>Forms Available:</strong> Cakes, meal, pellets.</p>
+              <p><strong>Processing Method:</strong> Oil extraction followed by drying.</p>
+              <p><strong>Nutritional Profile:</strong> High in protein, essential amino acids, and fiber; contains vitamins B and E.</p>
+              <p><strong>Applications:</strong> Used as a protein supplement in cattle, poultry, and aquaculture feeds.</p>
+            `,
+            img: "Soybean Oil Cake.jpg",
+          },
+          {
+            name: "Cottonseed Oil Cake",
+            description: `
+              <p><strong>Appearance:</strong> Dark brown with a fibrous texture.</p>
+              <p><strong>Forms Available:</strong> Cakes, meal.</p>
+              <p><strong>Processing Method:</strong> Oil extraction and drying.</p>
+              <p><strong>Nutritional Profile:</strong> Rich in protein, fat, and fiber; contains gossypol.</p>
+              <p><strong>Applications:</strong> Used in cattle and goat feeds; should be fed in limited amounts due to gossypol content.</p>
+            `,
+            img: "Cottonseed Oil Cake.jpg",
+          },
+          {
+            name: "Poultry Feed",
+            description: `
+              <p><strong>Appearance:</strong> Granules or pellets in varying shades of brown.</p>
+              <p><strong>Forms Available:</strong> Mash, crumbles, pellets.</p>
+              <p><strong>Processing Method:</strong> Grinding, mixing, and pelletizing.</p>
+              <p><strong>Nutritional Profile:</strong> Balanced mix of proteins, carbohydrates, fats, vitamins, and minerals.</p>
+              <p><strong>Applications:</strong> Essential for broilers, layers, and breeders for optimal growth and egg production.</p>
+            `,
+            img: "Poultry Feed.jpg",
+          },
+          {
+            name: "Goat Feed",
+            description: `
+              <p><strong>Appearance:</strong> Coarse granules or pellets.</p>
+              <p><strong>Forms Available:</strong> Pellets, meal.</p>
+              <p><strong>Processing Method:</strong> Mixing and pelletizing.</p>
+              <p><strong>Nutritional Profile:</strong> High in fiber, energy, and minerals like calcium and phosphorus.</p>
+              <p><strong>Applications:</strong> Supports growth, milk production, and overall health in goats.</p>
+            `,
+            img: "Goat Feed.webp",
+          },
+          {
+            name: "Cattle Feed",
+            description: `
+              <p><strong>Appearance:</strong> Light to dark brown pellets or mash.</p>
+              <p><strong>Forms Available:</strong> Pellets, cakes, mash.</p>
+              <p><strong>Processing Method:</strong> Blending, grinding, and pelletizing.</p>
+              <p><strong>Nutritional Profile:</strong> Rich in proteins, carbohydrates, vitamins, and minerals.</p>
+              <p><strong>Applications:</strong> Enhances milk production, weight gain, and overall health in dairy and beef cattle.</p>
+            `,
+            img: "Cattle Feed.jpg",
+          },
+          {
+            name: "Horse Feed",
+            description: `
+              <p><strong>Appearance:</strong> Textured feed with grains and pellets.</p>
+              <p><strong>Forms Available:</strong> Pellets, cubes, textured feed.</p>
+              <p><strong>Processing Method:</strong> Grinding, mixing, and extrusion.</p>
+              <p><strong>Nutritional Profile:</strong> High in energy, fiber, and essential nutrients like biotin and omega-3.</p>
+              <p><strong>Applications:</strong> Promotes strength, stamina, and healthy coat in horses.</p>
+            `,
+            img: "Horse Feed.webp",
+          },
+          {
+            name: "Pig Feed",
+            description: `
+              <p><strong>Appearance:</strong> Fine to medium-sized granules or pellets.</p>
+              <p><strong>Forms Available:</strong> Pellets, meal, mash.</p>
+              <p><strong>Processing Method:</strong> Grinding, mixing, and pelletizing.</p>
+              <p><strong>Nutritional Profile:</strong> Rich in protein, energy, and essential amino acids.</p>
+              <p><strong>Applications:</strong> Supports growth, reproduction, and overall health in pigs.</p>
+            `,
+            img: "Pig Feed.jpg",
+          },
+          {
+            name: "Aqua Feed",
+            description: `
+              <p><strong>Appearance:</strong> Small, uniform pellets or crumbles.</p>
+              <p><strong>Forms Available:</strong> Pellets (floating and sinking), crumbles.</p>
+              <p><strong>Processing Method:</strong> Extrusion and drying.</p>
+              <p><strong>Nutritional Profile:</strong> High in protein, omega-3 fatty acids, and minerals.</p>
+              <p><strong>Applications:</strong> Used in fish and shrimp farming for optimal growth and health.</p>
+            `,
+            img: "Aqua Feed.jpg",
+          },
+          {
+            name: "Lab Animal Feed",
+            description: `
+              <p><strong>Appearance:</strong> Uniform pellets or granules.</p>
+              <p><strong>Forms Available:</strong> Pellets, powdered form.</p>
+              <p><strong>Processing Method:</strong> Blending, extrusion.</p>
+              <p><strong>Nutritional Profile:</strong> Balanced diet with proteins, vitamins, and minerals.</p>
+              <p><strong>Applications:</strong> Used in laboratory settings for feeding rodents, rabbits, and other research animals.</p>
+            `,
+            img: "Lab Animal Feed.jpg",
+          },
     ],
     "spices": [
         {
