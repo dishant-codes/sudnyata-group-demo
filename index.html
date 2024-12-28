@@ -23,31 +23,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      overflow-x: hidden;
-    }
-
-    /* Custom Cursor Circle */
-    #cursor {
-      position: fixed;
-      width: 50px;
-      height: 50px;
-      border: 2px solid #000000;
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: transform 0.5s ease-in-out, opacity 0.3s ease;
-      opacity: 0;
-      /* Initially hidden */
-      z-index: 1000;
-    }
-
-    /* Image Moving Effect */
-    .image-container img {
-      transition: transform 0.3s ease-in-out;
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body class="font-sans bg-white">
@@ -421,11 +398,11 @@
           <div class="swiper-container image-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="rounded-lg shadow-lg max-w-full sm:max-w-[200px]" src="./assets/images/screenshort-1.jpg"
+                <img class="rounded-lg shadow-lg w-full object-cover h-[200px] sm:w-[260px]" src="./assets/images/screenshort-1.jpg"
                   alt="Customer Review Screenshot 1">
               </div>
               <div class="swiper-slide">
-                <img class="rounded-lg shadow-lg max-w-full sm:max-w-[200px]" src="./assets/images/screenshort-2.jpg"
+                <img class="rounded-lg shadow-lg w-full object-cover h-[200px] sm:w-[260px]" src="./assets/images/screenshort-2.jpg"
                   alt="Customer Review Screenshot 2">
               </div>
               <!-- Add more slides here if necessary -->
@@ -576,7 +553,7 @@
         <!-- Company Info -->
         <div class="w-full md:w-1/3 mb-6 md:mb-0">
           <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif"
-              class="w-[200px] md:w-[400px] rounded-lg p-2 bg-white" alt="" /></h2>
+              class="w-[250px] md:w-[350px] rounded-lg p-2 bg-white" alt="" /></h2>
           <p class="text-gray-300 leading-relaxed">
             Sudnyata Group of Companies, Vikramshila Nagar, <br>
             Behind Shankar Ice Factory,
@@ -617,7 +594,7 @@
         </div>
 
         <!-- Our Products -->
-        <div class="w-full md:w-1/3">
+        <div class="w-full md:w-1/5">
           <h3 class="text-xl font-semibold mb-4">Our Products</h3>
           <ul class="space-y-2 text-gray-400">
             <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &

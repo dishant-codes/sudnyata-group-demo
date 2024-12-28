@@ -21,40 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Styling for Category Tabs */
-        .category-tab {
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border: 2px solid transparent;
-            border-radius: 9999px;
-            background-color: #E3F9E5;
-            /* Light green background */
-            color: #047857;
-            /* Dark green text */
-            transition: all 0.3s ease;
-        }
-
-        .category-tab:hover {
-            background-color: #047857;
-            /* Dark green hover background */
-            color: #ffffff;
-            /* White text */
-        }
-
-        .category-tab.active-tab {
-            border-color: #047857;
-            /* Green border for active state */
-            background-color: #047857;
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body class="bg-white text-green-900">
@@ -158,80 +125,81 @@
     </div>
 
 
-    <!-- Footer Section -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-9">
-            <div class="flex flex-wrap justify-between">
-                <!-- Company Info -->
-                <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                    <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif"
-                            class="w-[200px] md:w-[400px] rounded-lg p-2 bg-white" alt="" /></h2>
-                    <p class="text-gray-300 leading-relaxed">
-                        Sudnyata Group of Companies, Vikramshila Nagar, <br>
-                        Behind Shankar Ice Factory,
-                        Wardha (MH), India- 442001
-                    </p>
-                    <div class="mt-4">
-                        <p class="text-gray-300 flex items-center">
-                            📞 <a href="tel:+917028399228"><span class="ml-2 font-semibold text-white">+91
-                                    702-839-9228</span></a>
-                        </p>
-                        <p class="text-gray-300 flex items-center mt-2">
-                            ✉️ <span class="ml-2 font-semibold text-white">contact@sudnyatagroup.com</span>
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Quick Links -->
-                <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <!-- First Column -->
-                        <ul class="space-y-2 text-gray-400">
-                            <li><a href="index.html" class="hover:text-white">Home</a></li>
-                            <li><a href="about.html" class="hover:text-white">About Us</a></li>
-                            <li><a href="about.html" class="hover:text-white">Why Us</a></li>
-                            <li><a href="index.html#reviews" class="hover:text-white">Our Customers</a></li>
-                            <li><a href="index.html#contact" class="hover:text-white">Contact Us</a></li>
-                        </ul>
-                        <!-- Second Column -->
-                        <ul class="space-y-2 text-gray-400">
-                            <li><a href="dealership.html" class="hover:text-white">Dealership</a></li>
-                            <li><a href="blogs.html" class="hover:text-white">Blogs</a></li>
-                            <li><a href="csr.html" class="hover:text-white">CSR</a></li>
-                            <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
-                            <li><a href="terms.html" class="hover:text-white">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Our Products -->
-                <div class="w-full md:w-1/3">
-                    <h3 class="text-xl font-semibold mb-4">Our Products</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &
-                                Vegetables</a></li>
-                        <li><a href="products.html#processed-dairy" class="hover:text-white">Processed Dairy
-                                Products</a></li>
-                        <li><a href="products.html#millets" class="hover:text-white">Millets</a></li>
-                        <li><a href="products.html#essential-oil" class="hover:text-white">Essential Oil</a></li>
-                        <li><a href="products.html#animal-feed" class="hover:text-white">Animal Feed</a></li>
-                        <li><a href="products.html#spices" class="hover:text-white">Spices</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="border-t flex justify-between border-gray-700 mt-8 pt-4 text-center">
-                <p class="text-gray-400 text-sm">
-                    Copyright 2024 Sudnyata Groups all rights reserved.
-                </p>
-                <p class="text-gray-500 text-sm">
-                    Powered By <a href="#" class="text-white font-semibold">SupremoTech</a>
-                </p>
-            </div>
+  <!-- Footer Section -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-9">
+      <div class="flex flex-wrap justify-between">
+        <!-- Company Info -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif"
+              class="w-[250px] md:w-[350px] rounded-lg p-2 bg-white" alt="" /></h2>
+          <p class="text-gray-300 leading-relaxed">
+            Sudnyata Group of Companies, Vikramshila Nagar, <br>
+            Behind Shankar Ice Factory,
+            Wardha (MH), India- 442001
+          </p>
+          <div class="mt-4">
+            <p class="text-gray-300 flex items-center">
+              📞 <a href="tel:+917028399228"><span class="ml-2 font-semibold text-white">+91
+                  702-839-9228</span></a>
+            </p>
+            <p class="text-gray-300 flex items-center mt-2">
+              ✉️ <span class="ml-2 font-semibold text-white">contact@sudnyatagroup.com</span>
+            </p>
+          </div>
         </div>
-    </footer>
+
+        <!-- Quick Links -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- First Column -->
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="index.html" class="hover:text-white">Home</a></li>
+              <li><a href="about.html" class="hover:text-white">About Us</a></li>
+              <li><a href="about.html" class="hover:text-white">Why Us</a></li>
+              <li><a href="index.html#reviews" class="hover:text-white">Our Customers</a></li>
+              <li><a href="index.html#contact" class="hover:text-white">Contact Us</a></li>
+            </ul>
+            <!-- Second Column -->
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="dealership.html" class="hover:text-white">Dealership</a></li>
+              <li><a href="blogs.html" class="hover:text-white">Blogs</a></li>
+              <li><a href="csr.html" class="hover:text-white">CSR</a></li>
+              <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+              <li><a href="terms.html" class="hover:text-white">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Our Products -->
+        <div class="w-full md:w-1/5">
+          <h3 class="text-xl font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &
+                    Vegetables</a></li>
+            <li><a href="products.html#processed-dairy" class="hover:text-white">Processed Dairy
+                    Products</a></li>
+            <li><a href="products.html#millets" class="hover:text-white">Millets</a></li>
+            <li><a href="products.html#essential-oil" class="hover:text-white">Essential Oil</a></li>
+            <li><a href="products.html#animal-feed" class="hover:text-white">Animal Feed</a></li>
+            <li><a href="products.html#spices" class="hover:text-white">Spices</a></li>
+        </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-t flex justify-between border-gray-700 mt-8 pt-4 text-center">
+        <p class="text-gray-400 text-sm">
+          Copyright 2024 Sudnyata Groups all rights reserved.
+        </p>
+        <p class="text-gray-500 text-sm">
+          Powered By <a href="#" class="text-white font-semibold">SupremoTech</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
     <!-- Scripts -->
     <script src="./assets/js/script.js"></script>

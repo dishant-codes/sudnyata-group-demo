@@ -1,0 +1,56 @@
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Category Tabs */
+.category-tab {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 9999px;
+    background-color: #E3F9E5;
+    /* Light green background */
+    color: #047857;
+    /* Dark green text */
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background-color: #047857;
+    /* Dark green hover background */
+    color: #ffffff;
+    /* White text */
+}
+
+.category-tab.active-tab {
+    border-color: #047857;
+    /* Green border for active state */
+    background-color: #047857;
+    color: #ffffff;
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+  /* Custom Cursor Circle */
+  #cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    /* Initially hidden */
+    z-index: 1000;
+  }
+
+  /* Image Moving Effect */
+  .image-container img {
+    transition: transform 0.3s ease-in-out;
+  }

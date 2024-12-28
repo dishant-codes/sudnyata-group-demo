@@ -405,7 +405,7 @@ const categories = {
                     <li><strong>Nutritional Value:</strong> Rich in vitamin C, fiber, and antioxidants, boosting immunity and digestion.</li>
                 </ul>
             `,
-      img: "Guava.jpeg",
+      img: "Guava.jpg",
     },
   ],
   "spray-dried": [
@@ -858,7 +858,6 @@ const categories = {
                 <p class="text-gray-600 text-center mb-8">Where there is Fragrance... there is Happiness</p>
                 <div class="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     <ul class="list-disc space-y-2">
-                    <li>CitSpray</li>
                     <li>Agarwood</li>
                     <li>Bergamot</li>
                     <li>Carrot Seed</li>
