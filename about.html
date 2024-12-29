@@ -25,54 +25,54 @@
 
 <body class="font-sans bg-white text-gray-800">
 
- <!-- Header Section -->
- <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-gray-800">
-      <img src="./assets/images/logo.avif" class="w-[200px] md:w-[300px]" alt="" />
-    </h1>
-    <nav>
-      <!-- Hamburger Button (for mobile) -->
-      <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
-        <!-- Icon: 3 lines -->
-        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-        <!-- Icon: X (hidden by default) -->
-        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+  <!-- Header Section -->
+  <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">
+        <img src="./assets/images/logo.avif" class="w-[200px] md:w-[300px]" alt="" />
+      </h1>
+      <nav>
+        <!-- Hamburger Button (for mobile) -->
+        <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+          <!-- Icon: 3 lines -->
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Icon: X (hidden by default) -->
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
 
-      <!-- Navigation Links -->
-      <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
-        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
-        <li><a href="products.html" class="hover:text-yellow-600">Product</a></li>
-        <li><a href="blogs.html" class="hover:text-yellow-600">Blogs</a></li>
-        <li><a href="dealership.html" class="hover:text-yellow-600">Dealership</a></li>
-        <li><a href="csr.html" class="hover:text-yellow-600">CSR</a></li>
-        <li><a href="index.html#contact" class="hover:text-yellow-600">Contact</a></li>
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
+          <li><a href="products.html" class="hover:text-yellow-600">Product</a></li>
+          <li><a href="blogs.html" class="hover:text-yellow-600">Blogs</a></li>
+          <li><a href="dealership.html" class="hover:text-yellow-600">Dealership</a></li>
+          <li><a href="csr.html" class="hover:text-yellow-600">CSR</a></li>
+          <li><a href="index.html#contact" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
+        <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
+        <li><a href="products.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Product</a></li>
+        <li><a href="blogs.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Blogs</a></li>
+        <li><a href="dealership.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Dealership</a></li>
+        <li><a href="csr.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">CSR</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
       </ul>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden mt-4">
-    <ul class="flex flex-col space-y-2">
-      <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
-      <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
-      <li><a href="products.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Product</a></li>
-      <li><a href="blogs.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Blogs</a></li>
-      <li><a href="dealership.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Dealership</a></li>
-      <li><a href="csr.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">CSR</a></li>
-      <li><a href="index.html#contact" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
-    </ul>
-  </div>
-  </div>
-</header>
+    </div>
+    </div>
+  </header>
 
 
   <!-- Hero Section -->
@@ -131,9 +131,9 @@
       </div>
     </div>
   </section>
-  
+
   <div class="fixed bottom-4 left-4">
-    <a href="https://wa.me/+917028399228?text=Hi" target="_blank" 
+    <a href="https://wa.me/+917028399228?text=Hi" target="_blank"
       class="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-600 transition">
       <img src="./assets/WhatsApp.svg" class="w-8 h-8 text-white" fill="currentColor" alt="">
     </a>
@@ -148,9 +148,9 @@
           <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif"
               class="w-[250px] md:w-[350px] rounded-lg p-2 bg-white" alt="" /></h2>
           <p class="text-gray-300 leading-relaxed">
-            Sudnyata Group of Companies, Vikramshila Nagar, <br>
+            Sudnyata Group of Companies, <br>
             Behind Shankar Ice Factory,
-            Wardha (MH), India- 442001
+            Wardha (MH), <br> India- 442001
           </p>
           <div class="mt-4">
             <p class="text-gray-300 flex items-center">
@@ -191,14 +191,14 @@
           <h3 class="text-xl font-semibold mb-4">Our Products</h3>
           <ul class="space-y-2 text-gray-400">
             <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &
-                    Vegetables</a></li>
+                Vegetables</a></li>
             <li><a href="products.html#processed-dairy" class="hover:text-white">Processed Dairy
-                    Products</a></li>
+                Products</a></li>
             <li><a href="products.html#millets" class="hover:text-white">Millets</a></li>
             <li><a href="products.html#essential-oil" class="hover:text-white">Essential Oil</a></li>
             <li><a href="products.html#animal-feed" class="hover:text-white">Animal Feed</a></li>
             <li><a href="products.html#spices" class="hover:text-white">Spices</a></li>
-        </ul>
+          </ul>
         </div>
       </div>
 
