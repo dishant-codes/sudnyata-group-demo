@@ -54,3 +54,29 @@ body {
   .image-container img {
     transition: transform 0.3s ease-in-out;
   }
+
+
+    /* Custom Tailwind classes for dynamic background */
+    .bg-default {
+      background-image: url('../images/bg-food.jpg');
+      /* Default background */
+    }
+
+    .bg-fruits {
+      background-image: url('../images/bg-food.jpg') !important;
+    }
+
+    .bg-dairy {
+      background-image: url('../images/bg-dairy.jpg') !important;
+    }
+
+    .bg-feed {
+      background-image: url('../images/bg-feed.jpg') !important;
+    }
+   
+    .bg-millets {
+      background-image: url('../images/bg-millets.jpg') !important;
+    }
+    .section {
+      transition: background-image 0.5s ease-in-out;
+    }

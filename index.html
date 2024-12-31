@@ -25,12 +25,36 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+
 </head>
 
 <body class="font-sans bg-white">
 
   <!-- Header Section -->
-  <header class="w-full bg-gray-50 py-4 px-6 shadow-md">
+  <div class="container mx-auto px-4 py-2">
+    <div class="flex justify-end items-center">
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <a href="mailto:contact@sudnyatagroup.com"
+            class="text-gray-700 hover:text-blue-600 text-sm">contact@sudnyatagroup.com</a>
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.993a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.993 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <a href="tel:+917028399228" class="text-gray-700 hover:text-blue-600 text-sm">+91 702-839-9228</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="w-full border py-4 px-6 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold text-gray-800">
         <img src="./assets/images/logo.avif" class="w-[200px] md:w-[300px]" alt="" />
@@ -51,10 +75,9 @@
         </button>
 
         <!-- Navigation Links -->
-        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600">
+        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600 text-xl">
           <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
           <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
-          <li><a href="products.html" class="hover:text-yellow-600">Product</a></li>
           <li><a href="blogs.html" class="hover:text-yellow-600">Blogs</a></li>
           <li><a href="dealership.html" class="hover:text-yellow-600">Dealership</a></li>
           <li><a href="csr.html" class="hover:text-yellow-600">CSR</a></li>
@@ -83,7 +106,7 @@
     <!-- Image Section -->
     <div class="lg:w-2/3 overflow-hidden relative" data-aos="fade-right" id="profile">
       <!-- <div id="cursor"></div> -->
-      <img src="./assets/images/home.jpg" id="moving-image" alt="Owner" class="rounded-lg w-full md:w-2/3 mx-auto">
+      <img src="./assets/images/home.jpg" id="moving-image" alt="Owner" class="rounded-lg w-full md:w-5/6 mx-auto">
     </div>
     <!-- Text Section -->
     <div class="lg:w-2/3 mb-8 lg:mb-0" data-aos="fade-left">
@@ -114,153 +137,88 @@
 
   </section>
 
-  <!-- Products Section -->
+
+  <!-- Group Of Company Section -->
   <section class="pb-12 bg-gray-50">
     <div class="container mx-auto">
       <!-- Section Title -->
-      <section class="text-center py-12 bg-green-100 mb-4 px-4">
+      <section class="text-center py-12 px-4">
         <h1 class="text-4xl font-bold text-green-700 mb-4">
-          Our Products
+          Our Group of Companies
         </h1>
         <p class="text-gray-600 text-lg">
           Discover premium-quality products crafted to meet your needs with freshness and care.
         </p>
       </section>
 
+      <div id="hover-section"
+        class="section bg-default bg-cover bg-center w-full md:h-[400px] h-full flex flex-col justify-center items-center transition-all duration-500 relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:py-2 py-8 px-4 w-full max-w-7xl text-white">
 
-
-      <!-- Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        <!-- Processed Vegetables and Food Card -->
-        <div data-aos="fade-up" data-aos-delay="200"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-orange-100 text-orange-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🥗
-            </div>
+          <!-- Processed Fruits and Vegetables -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-fruits" onmouseover="changeBackground('bg-fruits')" onmouseleave="resetBackground()">
+            <h3 class="text-2xl font-bold group-hover:underline">Processed Fruits & Vegetables</h3>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Premium quality processed fruits and vegetables for healthy living.
+            </p>
           </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Processed Vegetables and Food
-          </h3>
-          <p class="text-gray-600 text-center">
-            Processed vegetables and food offer convenience and flavor while retaining essential nutrients for your
-            meals.
-          </p>
-          <a href="products.html#dehydrated"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
-        </div>
 
-        <!-- Processed Dairy Products Card -->
-        <div data-aos="fade-up" data-aos-delay="400"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-blue-100 text-blue-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🧀
-            </div>
+          <!-- Millets -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-millets" onmouseover="changeBackground('bg-millets')" onmouseleave="resetBackground()">
+            <h3 class="text-2xl font-bold group-hover:underline">Millets</h3>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Nutritious and sustainable millets for a healthy and eco-friendly diet.
+            </p>
           </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Processed Dairy Products
-          </h3>
-          <p class="text-gray-600 text-center">
-            Enjoy high-quality processed dairy products tailored for taste, nutrition, and daily needs.
-          </p>
-          <a href="products.html#processed-dairy"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
-        </div>
 
-        <!-- Millets Card -->
-        <div data-aos="fade-up" data-aos-delay="600"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-yellow-100 text-yellow-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🌾
-            </div>
+
+          <!-- Animal Feed -->
+          <!-- <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-feed" onmouseover="changeBackground('bg-feed')" onmouseleave="resetBackground()">
+            <h3 class="text-2xl font-bold group-hover:underline">Animal Feeds</h3>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Nutrient-rich animal feed for healthier livestock and sustainable farming.
+            </p>
+          </div> -->
+
+          <!-- Processed Dairy Products -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-dairy" onmouseover="changeBackground('bg-dairy')" onmouseleave="resetBackground()">
+            <h3 class="text-2xl font-bold group-hover:underline">Processed Dairy Products</h3>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              High-quality dairy products designed for taste and nutrition.
+            </p>
           </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Millets
-          </h3>
-          <p class="text-gray-600 text-center">
-            Discover a range of healthy and nutritious millets ideal for wholesome meals and healthy snacking.
-          </p>
-          <a href="products.html#millets"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
-        </div>
 
-        <!-- Essential Oils Card -->
-        <div data-aos="fade-up" data-aos-delay="800"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-purple-100 text-purple-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🌿
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Essential Oils
-          </h3>
-          <p class="text-gray-600 text-center">
-            Experience the benefits of pure and natural essential oils for wellness, relaxation, and beauty.
-          </p>
-          <a href="products.html#essential-oil"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
-        </div>
 
-        <!-- Animal Feed Card -->
-        <div data-aos="fade-up" data-aos-delay="1000"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-red-100 text-red-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🐄
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Animal Feed
-          </h3>
-          <p class="text-gray-600 text-center">
-            High-quality, nutritious animal feed for livestock, ensuring optimal health and productivity.
-          </p>
-          <a href="products.html#animal-feed"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
         </div>
-
-        <div data-aos="fade-up" data-aos-delay="1200"
-          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex items-center justify-center mb-4">
-            <div
-              class="w-16 h-16 bg-yellow-100 text-yellow-600 flex items-center justify-center rounded-full text-3xl font-bold">
-              🌶️
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
-            Spices
-          </h3>
-          <p class="text-gray-600 text-center">
-            Explore our diverse range of spices that enhance flavor, aroma, and nutrition in your dishes.
-          </p>
-          <a href="products.html#spices"
-            class="block w-[200px] text-center mx-auto px-6 py-2 bg-gray-800 text-white font-medium text-[15px] rounded-full shadow hover:bg-gray-700 transition duration-300">
-            View Products
-          </a>
-        </div>
-
       </div>
 
     </div>
   </section>
+
+  <script>
+
+    const section = document.getElementById("hover-section");
+
+    function changeBackground(bgClass) {
+      section.classList.remove("bg-default");
+      section.classList.add(bgClass);
+    }
+
+    function resetBackground() {
+      section.classList.remove("bg-fruits", "bg-dairy", "bg-feed", "bg-millets");
+      section.classList.add("bg-default");
+    }
+
+  </script>
 
   <!-- Benefits Cards Section -->
   <section class="container mx-auto px-4 py-12">
@@ -353,7 +311,7 @@
   </section>
 
   <!-- Video Section -->
-  <section class="container mx-auto my-12 px-4">
+  <section class="container mx-auto my-12 px-4 overflow-hidden">
     <h2 class="text-3xl font-bold text-center mb-6">About Our Products</h2>
     <p class="text-center text-green-700 mb-8">
       Learn more about the quality and process behind our dehydrated and spray-dried products.
@@ -384,13 +342,8 @@
   </section>
 
   <!-- Customer Reviews Section -->
-  <section class="bg-gray-100 py-16" id="reviews">
+  <section class="bg-gray-100 py-16 overflow-hidden" id="reviews">
     <div class="container mx-auto px-4">
-      <!-- Section Title -->
-      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800">
-        What Our Customers Say
-      </h2>
-
       <!-- Swiper Container -->
       <div class="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-8">
         <!-- Screenshot Slider -->
@@ -398,11 +351,13 @@
           <div class="swiper-container image-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="rounded-lg shadow-lg w-full object-cover h-[200px] sm:w-[260px]"
+                <img
+                  class="rounded-lg shadow-lg w-full object-cover sm:w-[260px] border-8 border-slate-700 transition-transform duration-300 hover:scale-150 hover:translate-x-1/4"
                   src="./assets/images/screenshort-1.jpg" alt="Customer Review Screenshot 1">
               </div>
               <div class="swiper-slide">
-                <img class="rounded-lg shadow-lg w-full object-cover h-[200px] sm:w-[260px]"
+                <img
+                  class="rounded-lg shadow-lg w-full object-cover sm:w-[260px] border-8 border-slate-700 transition-transform duration-300 hover:scale-150 hover:translate-x-1/4"
                   src="./assets/images/screenshort-2.jpg" alt="Customer Review Screenshot 2">
               </div>
               <!-- Add more slides here if necessary -->
@@ -412,38 +367,32 @@
 
         <!-- Text Review Slider with Avatar -->
         <div class="w-full sm:w-1/2 overflow-hidden">
-          <div class="swiper-container text-slider">
+          <div class="swiper-container image-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide flex items-center justify-center">
                 <div class="flex flex-col items-center text-center">
                   <!-- Avatar and Review -->
-                  <img class="w-16 h-16 rounded-full mb-4" src="https://via.placeholder.com/100x100" alt="Avatar 1">
-                  <p class="text-gray-600 text-lg italic">"This product is fantastic! I’m really happy with it."</p>
-                  <p class="font-bold">Customer A</p>
+                  <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-800">
+                    What Our Customers Say
+                  </h2>
+                  <p class="text-gray-600 text-lg italic">"Mr. Zamih received a consignment of tomato powder and is very
+                    pleased with it. He reports that the powder arrived in good condition, has a fresh flavor and
+                    perfect color, and performs well in recipes, tasting just like fresh tomatoes. He is so satisfied
+                    with the quality that he expresses interest in ordering more products from the same range."</p>
                 </div>
               </div>
               <div class="swiper-slide flex items-center justify-center">
                 <div class="flex flex-col items-center text-center">
                   <!-- Avatar and Review -->
-                  <img class="w-16 h-16 rounded-full mb-4" src="https://via.placeholder.com/100x100" alt="Avatar 2">
-                  <p class="text-gray-600 text-lg italic">"Excellent customer support, highly recommend!"</p>
-                  <p class="font-bold">Customer B</p>
-                </div>
-              </div>
-              <div class="swiper-slide flex items-center justify-center">
-                <div class="flex flex-col items-center text-center">
-                  <!-- Avatar and Review -->
-                  <img class="w-16 h-16 rounded-full mb-4" src="https://via.placeholder.com/100x100" alt="Avatar 2">
-                  <p class="text-gray-600 text-lg italic">"Excellent customer support, highly recommend!"</p>
-                  <p class="font-bold">Customer B</p>
-                </div>
-              </div>
-              <div class="swiper-slide flex items-center justify-center">
-                <div class="flex flex-col items-center text-center">
-                  <!-- Avatar and Review -->
-                  <img class="w-16 h-16 rounded-full mb-4" src="https://via.placeholder.com/100x100" alt="Avatar 2">
-                  <p class="text-gray-600 text-lg italic">"Excellent customer support, highly recommend!"</p>
-                  <p class="font-bold">Customer B</p>
+                  <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-800">
+                    What Our Customers Say
+                  </h2>
+                  <p class="text-gray-600 text-lg italic">"Chihab confirms he received a shipment a week prior and that
+                    the packing was good and all bags were in good condition. When asked about specific products (dried
+                    vegetable flakes and fruit powders), he says they are all good in terms of flavor and quality. The
+                    customer also mentions that recipes using these products are colorful and well-received by their
+                    clients. They've even reduced their inventory of fresh vegetables due to the quality and longer
+                    shelf life of the supplied products."</p>
                 </div>
               </div>
               <!-- Add more slides here if necessary -->
@@ -470,7 +419,7 @@
 
     <!-- Form Section -->
     <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
-      <form action="https://formspree.io/f/xannjrog" method="POST">
+      <form action="https://formspree.io/f/xzzzaoal" method="POST">
         <!-- Name and Email -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
@@ -490,14 +439,7 @@
         </div>
 
         <!-- Code, Phone, Subject -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          <div>
-            <label for="code" class="block text-sm font-medium text-gray-700 mb-1">Code<span
-                class="text-red-500">*</span></label>
-            <input type="text" id="code" name="code" placeholder="Code"
-              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
-              required>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
             <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone/WhatsApp<span
                 class="text-red-500">*</span></label>
@@ -616,7 +558,7 @@
           Copyright 2024 Sudnyata Groups all rights reserved.
         </p>
         <p class="text-gray-500 text-sm">
-          Powered By <a href="#" class="text-white font-semibold">SupremoTech</a>
+          Developed By <a href="#" class="text-white font-semibold">SupremoTech</a>
         </p>
       </div>
     </div>
@@ -624,6 +566,7 @@
 
   <!-- Scripts -->
   <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

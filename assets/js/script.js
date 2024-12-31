@@ -1,38 +1,38 @@
 // Swiper for Image Slider (Screenshot Slider)
-var swiper1 = new Swiper('.image-slider', {
-  loop: true,  // Loop the slider
-  slidesPerView: 1,  // Show one slide at a time
-  spaceBetween: 10,  // Space between slides
+var swiper1 = new Swiper(".image-slider", {
+  loop: true, // Loop the slider
+  slidesPerView: 1, // Show one slide at a time
+  spaceBetween: 10, // Space between slides
   autoplay: {
-    delay: 3000,  // Slide changes every 3 seconds
+    delay: 3000, // Slide changes every 3 seconds
   },
   navigation: {
-    nextEl: '.swiper-button-next',  // Next button
-    prevEl: '.swiper-button-prev',  // Previous button
+    nextEl: ".swiper-button-next", // Next button
+    prevEl: ".swiper-button-prev", // Previous button
   },
 });
 
 // Swiper for Text Review Slider
-var swiper2 = new Swiper('.text-slider', {
-  loop: true,  // Loop the slider
-  slidesPerView: 1,  // Show one slide at a time
-  spaceBetween: 10,  // Space between slides
+var swiper2 = new Swiper(".text-slider", {
+  loop: true, // Loop the slider
+  slidesPerView: 1, // Show one slide at a time
+  spaceBetween: 10, // Space between slides
   // Responsive breakpoints
   breakpoints: {
     // When window width is >= 768px (tablet and above)
     768: {
       slidesPerView: 2, // Show 2 slides on desktop
       spaceBetween: 20, // Increase space between slides
-    }
+    },
   },
   autoplay: {
-    delay: 4000,  // Slide changes every 4 seconds
+    delay: 4000, // Slide changes every 4 seconds
     disableOnInteraction: false, // Don't disable autoplay after user interaction
     pauseOnMouseEnter: true, // Pause autoplay on hover
   },
   navigation: {
-    nextEl: '.swiper-button-next',  // Next button
-    prevEl: '.swiper-button-prev',  // Previous button
+    nextEl: ".swiper-button-next", // Next button
+    prevEl: ".swiper-button-prev", // Previous button
   },
 });
 
