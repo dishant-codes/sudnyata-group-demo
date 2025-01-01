@@ -77,6 +77,17 @@ body {
     .bg-millets {
       background-image: url('../images/bg-millets.jpg') !important;
     }
+  
+    .bg-oil {
+      background-image: url('../images/bg-oil.jpg') !important;
+    }
+
+    .bg-spices {
+      background-image: url('../images/bg-spices.jpg') !important;
+    }
+
+    
+
     .section {
       transition: background-image 0.5s ease-in-out;
     }
