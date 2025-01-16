@@ -77,16 +77,21 @@ container.addEventListener("mousemove", (e) => {
   movingImage.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
 });
 
-const dropdownToggle = document.getElementById("dropdownToggle");
-const dropdownMenu = document.getElementById("dropdownMenu");
+// const dropdownToggle = document.getElementById("dropdownToggle");
+// const dropdownMenu = document.getElementById("dropdownMenu");
 
-dropdownToggle.addEventListener("click", () => {
-  dropdownMenu.classList.toggle("hidden");
-});
+// dropdownToggle.addEventListener("click", () => {
+//   dropdownMenu.classList.toggle("hidden");
+// });
 
-// Optional: Close dropdown if clicked outside
-document.addEventListener("click", (e) => {
-  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-    dropdownMenu.classList.add("hidden");
-  }
-});
+// // Optional: Close dropdown if clicked outside
+// document.addEventListener("click", (e) => {
+//   if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+//     dropdownMenu.classList.add("hidden");
+//   }
+// });
+
+// Set current year
+const currentYearElement = document.getElementById("current_year");
+const currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;
