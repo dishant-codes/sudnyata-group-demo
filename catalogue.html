@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Product Catalogue | Sudnyata Group</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper.js CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+    <!-- Header Section -->
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-end items-center">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <a href="mailto:parikshit@sudnyatagroup.com"
+                        class="text-gray-700 hover:text-blue-600 text-sm">parikshit@sudnyatagroup.com</a>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.993a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.993 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <a href="tel:+917028399228" class="text-gray-700 hover:text-blue-600 text-sm">+91 702-839-9228</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="w-full border py-4 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-gray-800">
+            <img src="./assets/images/logo.avif" class="w-[200px] md:w-[300px]" alt="" />
+          </h1>
+          <nav>
+            <!-- Hamburger Button (for mobile) -->
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+              <!-- Icon: 3 lines -->
+              <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+              <!-- Icon: X (hidden by default) -->
+              <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+    
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-600 text-xl">
+              <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+              <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
+              <li><a href="catalogue.html" class="hover:text-yellow-600">Catalogue</a></li>
+              <li><a href="blogs.html" class="hover:text-yellow-600">Blogs</a></li>
+              <li><a href="dealership.html" class="hover:text-yellow-600">Dealership</a></li>
+              <li><a href="csr.html" class="hover:text-yellow-600">CSR</a></li>
+              <li><a href="index.html#contact" class="hover:text-yellow-600">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+          <ul class="flex flex-col space-y-2">
+            <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
+            <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
+            <li><a href="catalogue.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Catalogue</a></li>
+            <li><a href="blogs.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Blogs</a></li>
+            <li><a href="dealership.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Dealership</a></li>
+            <li><a href="csr.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">CSR</a></li>
+            <li><a href="index.html#contact" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </header>
+
+    <!-- Main Content -->
+    <main class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6" data-aos="fade-down">
+                    Download Our Product Catalogue
+                </h1>
+                <p class="text-xl text-gray-600 mb-12" data-aos="fade-up">
+                    Explore our complete range of premium products in our detailed catalogue
+                </p>
+
+                <!-- Catalogue Preview Card -->
+                <div class="bg-white rounded-2xl shadow-2xl p-8 mb-12" data-aos="zoom-in">
+                    <div class="relative group cursor-pointer mb-8">
+                        <img src="./assets/images/catelogue.jpg" alt="Catalogue Preview"
+                            class="mx-auto rounded-lg shadow-lg transition transform duration-300 w-full h-[200px] object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <p class="text-white text-lg font-semibold">Click to Download</p>
+                        </div>
+                    </div>
+
+                    <!-- Download Button -->
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:5fff03ee-0386-4d14-8caf-f8b14916be71"
+                        target="_blank"
+                        download
+                        class="inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        data-aos="fade-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Download Catalogue
+                    </a>
+
+                    <p class="text-gray-500 mt-4">
+                        PDF Format • 100 MB
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                        <p class="text-gray-600">View our catalogue seamlessly on any device</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-semibold mb-2">Detailed Specifications</h3>
+                        <p class="text-gray-600">Complete product information at your fingertips</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="text-4xl mb-4">🌟</div>
+                        <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+                        <p class="text-gray-600">High-resolution images and professional design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-4 left-4">
+        <a href="https://wa.me/+917028399228?text=Hi" target="_blank"
+            class="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-600 transition">
+            <img src="./assets/WhatsApp.svg" class="w-8 h-8 text-white" fill="currentColor" alt="">
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-9">
+            <div class="flex flex-wrap justify-between">
+                <!-- Company Info -->
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h2 class="text-3xl font-bold text-yellow-500 mb-2">
+                        <img src="./assets/images/logo.avif" class="w-[250px] md:w-[350px] rounded-lg p-2 bg-white"
+                            alt="" />
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sudnyata Group of Companies, <br>
+                        Behind Shankar Ice Factory,
+                        Wardha (MH), <br> India- 442001
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-gray-300 flex items-center">
+                            📞 <a href="tel:+917028399228"><span class="ml-2 font-semibold text-white">+91
+                                    702-839-9228</span></a>
+                        </p>
+                        <p class="text-gray-300 flex items-center mt-2">
+                            ✉️ <span class="ml-2 font-semibold text-white">parikshit@sudnyatagroup.com</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="index.html" class="hover:text-white">Home</a></li>
+                            <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                            <li><a href="about.html" class="hover:text-white">Why Us</a></li>
+                            <li><a href="index.html#reviews" class="hover:text-white">Our Customers</a></li>
+                            <li><a href="index.html#contact" class="hover:text-white">Contact Us</a></li>
+                        </ul>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="dealership.html" class="hover:text-white">Dealership</a></li>
+                            <li><a href="blogs.html" class="hover:text-white">Blogs</a></li>
+                            <li><a href="csr.html" class="hover:text-white">CSR</a></li>
+                            <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="hover:text-white">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="w-full md:w-1/5">
+                    <h3 class="text-xl font-semibold mb-4">Our Products</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &
+                                Vegetables</a></li>
+                        <li><a href="products.html#processed-dairy" class="hover:text-white">Processed Dairy
+                                Products</a></li>
+                        <li><a href="products.html#millets" class="hover:text-white">Millets</a></li>
+                        <li><a href="products.html#essential-oil" class="hover:text-white">Essential Oil</a></li>
+                        <li><a href="products.html#animal-feed" class="hover:text-white">Animal Feed</a></li>
+                        <li><a href="products.html#spices" class="hover:text-white">Spices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t flex justify-between border-gray-700 mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">
+                    Copyright <span id="current_year"></span> Sudnyata Groups all rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Powered By <a href="https://suprimotech.com" class="text-white font-semibold">SupremoTech</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html></header>
