@@ -5,112 +5,645 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <title>Service Suspended | Payment Pending - Sudnyata Groups</title>
+  <title>Sudnyata Groups : Your Partner in Premium Food Ingredients</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
+  <!-- Swiper.js CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Sudnyata Groups: Your Partner in Premium Food Ingredients. We specialize in manufacturing premium-quality products including processed vegetables, fruits, millets, essential oils, and animal feed.">
+  <meta name="keywords"
+    content="Sudnyata Groups, Premium Food Ingredients, Processed Vegetables, Fruits, Millets, Essential Oils, Animal Feed, Organic Products">
+  <meta name="author" content="Sudnyata Groups">
+  <meta property="og:title" content="Sudnyata Groups : Your Partner in Premium Food Ingredients">
+  <meta property="og:description"
+    content="We specialize in manufacturing premium-quality products including processed vegetables, fruits, millets, essential oils, and animal feed.">
+  <meta property="og:image" content="https://www.sudnyatagroup.com/assets/images/logo.avif">
+  <meta property="og:url" content="https://www.sudnyatagroup.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sudnyata Groups : Your Partner in Premium Food Ingredients">
+  <meta name="twitter:description"
+    content="We specialize in manufacturing premium-quality products including processed vegetables, fruits, millets, essential oils, and animal feed.">
+  <meta name="twitter:image" content="https://www.sudnyatagroup.com/assets/images/logo.avif">
+
+  <!-- Google Fonts (Optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K1BL754B1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3K1BL754B1');
+  </script>
+
+  <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1277133060899551');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1277133060899551&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Meta Pixel Code -->
+
+
 </head>
 
-<body class="bg-gray-100 min-h-screen flex flex-col justify-between text-gray-800">
+<body class="font-sans bg-white">
 
-  <!-- Top Emergency Banner -->
-  <div class="bg-red-600 text-white text-center py-2.5 px-4 font-semibold text-sm tracking-wide">
-    ⚠️ ACCOUNT NOTICE: Website services have been temporarily paused due to an outstanding account balance.
+  <!-- Header Section -->
+  <div class="container mx-auto px-4 py-2">
+    <div class="flex justify-end items-center">
+      <div class="flex items-center justify-between space-x-4">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <a href="mailto:parikshit@sudnyatagroup.com"
+            class="text-gray-700 hover:text-blue-600 text-[12px] md:text-sm">parikshit@sudnyatagroup.com</a>
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.993a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.993 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <a href="tel:+917028399228" class="text-gray-700 hover:text-blue-600 text-[12px] md:text-sm">+91
+            702-839-9228</a>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Header / Brand -->
-  <header class="w-full bg-white border-b py-4 px-6 shadow-sm">
+  <header class="w-full border py-4 px-2 md:px-6 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
-      <img src="./assets/images/logo.avif" class="w-[180px] md:w-[240px]" alt="Sudnyata Groups" />
-      <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-red-600 bg-red-50 border border-red-200 px-3 py-1 rounded-full">
-        Action Required
-      </span>
+      <h1 class="text-2xl font-bold text-gray-800">
+        <img src="./assets/images/logo.avif" class="w-[200px] md:w-[300px]" alt="" />
+      </h1>
+      <nav>
+        <!-- Hamburger Button (for mobile) -->
+        <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+          <!-- Icon: 3 lines -->
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Icon: X (hidden by default) -->
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-6 text-gray-600 text-xl">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About Us</a></li>
+          <li><a href="catalogue.html" class="hover:text-yellow-600">Catalogue</a></li>
+          <li><a href="blogs.html" class="hover:text-yellow-600">Blogs</a></li>
+          <li><a href="dealership.html" class="hover:text-yellow-600">Dealership</a></li>
+          <li><a href="csr.html" class="hover:text-yellow-600">CSR</a></li>
+          <li><a href="index.html#contact" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="index.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Home</a></li>
+        <li><a href="about.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">About Us</a></li>
+        <li><a href="catalogue.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Catalogue</a></li>
+        <li><a href="blogs.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Blogs</a></li>
+        <li><a href="dealership.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Dealership</a></li>
+        <li><a href="csr.html" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">CSR</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-4 bg-gray-100 hover:bg-yellow-100">Contact</a></li>
+      </ul>
+    </div>
     </div>
   </header>
 
-  <!-- Main Warning Container -->
-  <main class="flex-grow flex items-center justify-center px-4 py-12">
-    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-      
-      <!-- Card Status Header -->
-      <div class="bg-gradient-to-r from-red-500 to-amber-600 p-8 text-white text-center">
-        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-        </div>
-        <h1 class="text-2xl md:text-3xl font-bold">Services Temporarily Suspended</h1>
-        <p class="text-red-100 text-sm md:text-base mt-2">
-          Domain & Hosting Services are on Hold Pending Payment Clearance
+  <!-- Main Section -->
+  <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
+    <!-- Image Section -->
+    <div class="w-full lg:w-2/2 overflow-hidden relative mr-12" data-aos="fade-right" id="profile">
+      <!-- <div id="cursor"></div> -->
+      <img src="./assets/images/home.jpg" id="moving-image" alt="Owner" class="rounded-lg w-full md:w-2/2 mx-auto">
+    </div>
+    <!-- Text Section -->
+    <div class="lg:w-2/3 mb-8 lg:mb-0" data-aos="fade-left">
+      <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight mb-4">
+        Sudnyata Groups : Your Partner in <br />
+        Premium Food Ingredients
+      </h1>
+      <p class="text-gray-600 text-lg mb-6 leading-relaxed text-justify">
+        Welcome to our group, where we specialize in manufacturing premium-quality products crafted to the highest
+        standards. Our diverse range includes processed vegetables and fruits in flakes and powder form, millets,
+        essential oils, and animal feed. Carefully sourced and processed, our products retain maximum nutrient value. We
+        are dedicated to delivering superior solutions that emphasize health, sustainability, and uncompromised quality
+        for our customers
+      </p>
+      <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+        Trust us for excellence in every product we create. With over 20+
+        years of experience we manufacture and export organic products.
+      </p>
+      <a href="#explore"
+        class="inline-block px-6 py-3 bg-gray-800 text-white font-medium text-lg rounded-full shadow hover:bg-gray-700 transition duration-300">
+        Explore Now
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Group Of Company Section -->
+  <section class="pb-12 bg-gray-50">
+    <div class="container mx-auto">
+      <!-- Section Title -->
+      <section class="text-center py-12 px-4">
+        <h1 class="text-4xl font-bold text-green-700 mb-4">
+          Our Group of Companies
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Discover premium-quality products crafted to meet your needs with freshness and care.
         </p>
-      </div>
+      </section>
 
-      <!-- Card Details & Actions -->
-      <div class="p-6 md:p-8 space-y-6">
-        
-        <div>
-          <h2 class="text-lg font-semibold text-gray-800 mb-2">Notice to Website Administration</h2>
-          <p class="text-gray-600 leading-relaxed text-sm md:text-base">
-            Access to this website has been temporarily restricted because the pending development and maintenance invoice remains unpaid past the agreed grace period.
-          </p>
-        </div>
+      <div id="hover-section"
+        class="section bg-default bg-cover bg-center w-full md:h-[400px] h-full flex flex-col justify-center items-center transition-all duration-500 relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:py-2 py-8 px-4 w-full max-w-7xl text-white">
 
-        <!-- Reference Summary Box -->
-        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5 space-y-3">
-          <div class="flex justify-between items-center text-sm border-b pb-2">
-            <span class="text-gray-500">Domain:</span>
-            <span class="font-medium text-gray-800">sudnyatagroup.com</span>
+          <!-- Processed Fruits and Vegetables -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-fruits" onmouseover="changeBackground('bg-fruits')" onmouseleave="resetBackground()">
+            <a href="products.html#dehydrated">
+              <h3 class="text-2xl font-bold group-hover:underline">Processed Fruits & Vegetables</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Premium quality processed fruits and vegetables for healthy living.
+            </p>
           </div>
-          <div class="flex justify-between items-center text-sm border-b pb-2">
-            <span class="text-gray-500">Service Status:</span>
-            <span class="font-semibold text-red-600">Suspended / Pending Clearance</span>
+
+          <!-- Millets -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-millets" onmouseover="changeBackground('bg-millets')" onmouseleave="resetBackground()">
+            <a href="products.html#millets">
+              <h3 class="text-2xl font-bold group-hover:underline">Millets</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Nutritious and sustainable millets for a healthy and eco-friendly diet.
+            </p>
           </div>
-          <div class="flex justify-between items-center text-sm">
-            <span class="text-gray-500">Resolution Window:</span>
-            <span class="font-medium text-gray-800">Immediate upon receipt of payment</span>
+
+
+          <!-- Animal Feed -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-feed" onmouseover="changeBackground('bg-feed')" onmouseleave="resetBackground()">
+            <a href="products.html#animal-feed">
+              <h3 class="text-2xl font-bold group-hover:underline">Animal Feeds</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Nutrient-rich animal feed for healthier livestock and sustainable farming.
+            </p>
           </div>
-        </div>
 
-        <!-- Reactivation Instructions -->
-        <div class="space-y-3">
-          <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Steps to Reactivate</h3>
-          <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
-            <li>Review the unpaid invoice sent to your primary billing email.</li>
-            <li>Execute the transfer and retain the transaction reference ID / UTR.</li>
-            <li>Forward payment confirmation to the technical administrator below to restore full service.</li>
-          </ul>
-        </div>
+          <!-- Processed Dairy Products -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-dairy" onmouseover="changeBackground('bg-dairy')" onmouseleave="resetBackground()">
+            <a href="products.html#processed-dairy">
+              <h3 class="text-2xl font-bold group-hover:underline">Processed Dairy Products</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              High-quality dairy products designed for taste and nutrition.
+            </p>
+          </div>
 
-        <!-- Contact Support Button -->
-        <div class="pt-4 border-t flex flex-col sm:flex-row gap-3">
-          <a href="mailto:parikshit@sudnyatagroup.com?subject=Payment%20Clearance%20Notice" 
-             class="flex-1 bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 px-4 rounded-lg text-center transition">
-            Contact Billing / Send Receipt
-          </a>
-          <a href="tel:+917028399228" 
-             class="flex-1 border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-4 rounded-lg text-center transition">
-            Call Administration
-          </a>
-        </div>
+          <!-- Essential Oil -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-oil" onmouseover="changeBackground('bg-oil')" onmouseleave="resetBackground()">
+            <a href="products.html#essential-oil">
+              <h3 class="text-2xl font-bold group-hover:underline">Essential Oil</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Pure and natural essential oils for wellness and aromatherapy.
+            </p>
+          </div>
 
+          <!-- Spices -->
+          <div
+            class="group flex-1 h-full relative p-6 rounded-lg text-center cursor-pointer transition-transform transform hover:scale-105"
+            data-bg="bg-spices" onmouseover="changeBackground('bg-spices')" onmouseleave="resetBackground()">
+            <a href="products.html#spices">
+              <h3 class="text-2xl font-bold group-hover:underline">Spices</h3>
+            </a>
+            <p class="opacity-0 text-xl group-hover:opacity-100 transition-opacity duration-300 text-gray-300 mt-2">
+              Fresh and aromatic spices to enhance your culinary creations.
+            </p>
+          </div>
+
+        </div>
       </div>
 
     </div>
-  </main>
+  </section>
 
-  <!-- Footer -->
-  <footer class="w-full bg-white border-t py-4 text-center text-xs text-gray-500">
-    <p>Automated Billing & Administrative System &bull; Technical Support Services</p>
+  <script>
+
+    const section = document.getElementById("hover-section");
+
+    function changeBackground(bgClass) {
+      section.classList.remove("bg-default");
+      section.classList.add(bgClass);
+    }
+
+    function resetBackground() {
+      section.classList.remove("bg-fruits", "bg-dairy", "bg-feed", "bg-millets", "bg-oil", "bg-spices");
+      section.classList.add("bg-default");
+    }
+
+  </script>
+
+  <!-- Benefits Cards Section -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="text-center mb-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Unlock the Natural benefits of our Variety of Products
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Switch to a healthier lifestyle with nature's best offerings.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Plant Based Card -->
+      <div data-aos="fade-up" data-aos-delay="800"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🥦
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Plant Based
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Rich in Protein Card -->
+      <div data-aos="fade-up" data-aos-delay="1000"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-green-100 text-green-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🫘
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Rich in Protein
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Energy Booster Card -->
+      <div data-aos="fade-up" data-aos-delay="1200"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-yellow-100 text-yellow-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            ⚡
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Energy Booster
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+
+      <!-- Cruelty Free Card -->
+      <div data-aos="fade-up" data-aos-delay="1400"
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <div
+            class="w-16 h-16 bg-pink-100 text-pink-600 flex items-center justify-center rounded-full text-3xl font-bold">
+            🐾
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2 text-center">
+          Cruelty Free
+        </h3>
+        <p class="text-gray-600 text-center">
+          Plant-based protein-rich products are highly valued for their
+          nutritional content and their ability to support a balanced diet,
+          especially for those avoiding animal products.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="container mx-auto my-12 px-4 overflow-hidden">
+    <h2 class="text-3xl font-bold text-center mb-6">About Our Products</h2>
+    <p class="text-center text-green-700 mb-8">
+      Learn more about the quality and process behind our dehydrated and spray-dried products.
+    </p>
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Video 1 -->
+      <div class="video-container w-full sm:w-1/2 lg:w-2/5" data-aos="fade-right">
+        <div class="aspect-w-16 aspect-h-9 h-[300px]">
+          <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/lGA12c2xMRs"
+            title="About Dehydrated Products" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-container w-full sm:w-1/2 lg:w-2/5" data-aos="fade-left">
+        <div class="aspect-w-16 aspect-h-9 h-[300px]">
+          <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/wsszUkPAOh8"
+            title="About Spray Dried Products" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="bg-gray-100 py-16 overflow-hidden" id="reviews">
+    <div class="container mx-auto px-4">
+      <!-- Swiper Container -->
+      <div class="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-8">
+        <!-- Screenshot Slider -->
+        <div class="w-full sm:w-1/4 overflow-hidden">
+          <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg shadow-lg w-full object-cover sm:w-[260px] border-8 border-slate-700 transition-transform duration-300 hover:scale-150 hover:translate-x-1/4"
+                  src="./assets/images/screenshort-1.jpg" alt="Customer Review Screenshot 1">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg shadow-lg w-full object-cover sm:w-[260px] border-8 border-slate-700 transition-transform duration-300 hover:scale-150 hover:translate-x-1/4"
+                  src="./assets/images/screenshort-2.jpg" alt="Customer Review Screenshot 2">
+              </div>
+              <!-- Add more slides here if necessary -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Review Slider with Avatar -->
+        <div class="w-full sm:w-1/2 overflow-hidden">
+          <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex items-center justify-center">
+                <div class="flex flex-col items-center text-center">
+                  <!-- Avatar and Review -->
+                  <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-800">
+                    What Our Customers Say
+                  </h2>
+                  <p class="text-gray-600 text-lg italic">"Mr. Zamih received a consignment of tomato powder and is very
+                    pleased with it. He reports that the powder arrived in good condition, has a fresh flavor and
+                    perfect color, and performs well in recipes, tasting just like fresh tomatoes. He is so satisfied
+                    with the quality that he expresses interest in ordering more products from the same range."</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex items-center justify-center">
+                <div class="flex flex-col items-center text-center">
+                  <!-- Avatar and Review -->
+                  <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 text-gray-800">
+                    What Our Customers Say
+                  </h2>
+                  <p class="text-gray-600 text-lg italic">"Chihab confirms he received a shipment a week prior and that
+                    the packing was good and all bags were in good condition. When asked about specific products (dried
+                    vegetable flakes and fruit powders), he says they are all good in terms of flavor and quality. The
+                    customer also mentions that recipes using these products are colorful and well-received by their
+                    clients. They've even reduced their inventory of fresh vegetables due to the quality and longer
+                    shelf life of the supplied products."</p>
+                </div>
+              </div>
+              <!-- Add more slides here if necessary -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <div class="max-w-7xl mx-auto px-6 py-12 md:flex md:justify-between md:items-center gap-12" id="contact">
+    <!-- Left Section -->
+    <div class="w-full md:w-1/2 mb-10 md:mb-0">
+      <h2 class="text-4xl font-semibold text-gray-800 leading-tight mb-4">
+        Need More Information? Fill Out the Form and We’ll Get Back to You
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Complete the form below, and our team will respond promptly with the information you need.
+        We are here to assist you and ensure your satisfaction.
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+      <form action="https://formspree.io/f/xzzzaoal" method="POST">
+        <!-- Name and Email -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name<span
+                class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter Name"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email<span
+                class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter Email"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+        </div>
+
+        <!-- Code, Phone, Subject -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone/WhatsApp<span
+                class="text-red-500">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Mobile Number"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+          </div>
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject<span
+                class="text-red-500">*</span></label>
+            <select id="subject" name="subject"
+              class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"
+              required>
+              <option value="" disabled selected>-Select-</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea id="message" name="message" placeholder="Enter Your Requirements" rows="4"
+            class="w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-700 focus:border-gray-700 p-3"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit"
+            class="w-full bg-gray-800 text-white font-semibold py-3 rounded-md hover:bg-gray-900 transition-all duration-300 flex items-center justify-center">
+            Submit Now <span class="ml-2 text-xl">&rarr;</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="fixed bottom-4 left-4">
+    <a href="https://wa.me/+917028399228?text=Hi" target="_blank"
+      class="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-600 transition">
+      <img src="./assets/WhatsApp.svg" class="w-8 h-8 text-white" fill="currentColor" alt="">
+    </a>
+  </div>
+
+
+  <!-- Footer Section -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-9">
+      <div class="flex flex-wrap justify-between">
+        <!-- Company Info -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-3xl font-bold text-yellow-500 mb-2"><img src="./assets/images/logo.avif"
+              class="w-[250px] md:w-[350px] rounded-lg p-2 bg-white" alt="" /></h2>
+          <p class="text-gray-300 leading-relaxed">
+            Sudnyata Group of Companies, <br>
+            Behind Shankar Ice Factory,
+            Wardha (MH), <br> India- 442001
+          </p>
+          <div class="mt-4">
+            <p class="text-gray-300 flex items-center">
+              📞 <a href="tel:+917028399228"><span class="ml-2 font-semibold text-white">+91
+                  702-839-9228</span></a>
+            </p>
+            <p class="text-gray-300 flex items-center mt-2">
+              ✉️ <span class="ml-2 font-semibold text-white">parikshit@sudnyatagroup.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- First Column -->
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="index.html" class="hover:text-white">Home</a></li>
+              <li><a href="about.html" class="hover:text-white">About Us</a></li>
+              <li><a href="about.html" class="hover:text-white">Why Us</a></li>
+              <li><a href="index.html#reviews" class="hover:text-white">Our Customers</a></li>
+              <li><a href="index.html#contact" class="hover:text-white">Contact Us</a></li>
+            </ul>
+            <!-- Second Column -->
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="dealership.html" class="hover:text-white">Dealership</a></li>
+              <li><a href="blogs.html" class="hover:text-white">Blogs</a></li>
+              <li><a href="csr.html" class="hover:text-white">CSR</a></li>
+              <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+              <li><a href="terms.html" class="hover:text-white">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Our Products -->
+        <div class="w-full md:w-1/5">
+          <h3 class="text-xl font-semibold mb-4">Our Products</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="products.html#dehydrated" class="hover:text-white">Processed Fruits &
+                Vegetables</a></li>
+            <li><a href="products.html#processed-dairy" class="hover:text-white">Processed Dairy
+                Products</a></li>
+            <li><a href="products.html#millets" class="hover:text-white">Millets</a></li>
+            <li><a href="products.html#essential-oil" class="hover:text-white">Essential Oil</a></li>
+            <li><a href="products.html#animal-feed" class="hover:text-white">Animal Feed</a></li>
+            <li><a href="products.html#spices" class="hover:text-white">Spices</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-t flex justify-between border-gray-700 mt-8 pt-4 text-center">
+        <p class="text-gray-400 text-sm">
+          Copyright <span id="current_year"></span> Sudnyata Groups all rights reserved.
+        </p>
+        <p class="text-gray-500 text-sm">
+          Powered By <a href="https://suprimotech.com" class="text-white font-semibold">SuprimoTech</a>
+        </p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+
 </body>
+
 
 </html>
